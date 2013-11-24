@@ -1,0 +1,55 @@
+@import url(bootstrap.min.css);
+@import url(pygments.css);
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+#wrap {
+  border-top: 5px solid #444444;
+  height: auto;
+  margin: 0 auto -100px;
+  min-height: 100%;
+  padding: 0 0 100px;
+}
+
+#header {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #444444;
+}
+
+#footer {
+  height: 100px;
+  background-color: #eeeeee;
+  border-top: 1px solid #444444;
+}
+#footer .container {
+  color: gray;
+  font-size: 0.9em;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.page .page-title {
+  text-transform: uppercase;
+}
+.page .pagination {
+  margin-top: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.article-list .list-item {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0;
+}
+.article-list .list-item:last-child {
+  border-bottom: none;
+}
+.article-list .article-author address {
+  margin-bottom: 0;
+}
