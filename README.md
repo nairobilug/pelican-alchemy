@@ -5,5 +5,5 @@ WIP
 
 ##Screenshot
 
-![pelican-alchemy](https://raw.github.com/raymondwanyoike/pelican-alchemy/develop/screenshot.jpg)
+![pelican-alchemy](https://raw.github.com/raymondwanyoike/pelican-alchemy/develop/screenshot.png)
 
