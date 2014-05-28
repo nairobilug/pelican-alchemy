@@ -1,48 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}
-  {{ super() }}
-{% endblock %}
-
 {% block content %}
-  <div class="page">
-    {% block content_title %}
-      <h3 class="page-title">All Articles</h2>
+    {% block page_title %}
+        <h1>All Articles</h1>
     {% endblock %}
-    <ul class="article-list list-unstyled">
-      {% for article in articles_page.object_list %}
-        <li class="list-item">
-          <article class="article">
-            <header class="row">
-              <div class="col-sm-6">
-                <div class="article-title">
-                  <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-                </div>
-              </div>
-              <div class="col-sm-2">
-                {% if article.author and SHOW_ARTICLE_AUTHOR %}
-                  <li class="article-author">
-                    <address>
-                      <a class="text-muted" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-                    </address>
-                  </li>
-                {% endif %}
-              </div>
-              <div class="col-sm-2">
-                <li class="article-category">
-                  <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-                </li>
-              </div>
-              <div class="col-sm-2">
-                <li class="article-date" title="{{ article.date.isoformat() }}">
-                  {{ article.locale_date }}
-                </li>
-              </div>
-            </header>
-          </article>
-        </li>
-      {% endfor %}
-    </ul>
+    <div>
+        {% for article in articles_page.object_list %}
+            {% include "include/article_list.html" %}
+        {% endfor %}
+    </div>
     {% include 'pagination.html' %}
-  </div>
-{% endblock content %}
+</div>
+{% endblock %}
