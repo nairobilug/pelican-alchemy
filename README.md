@@ -4,7 +4,7 @@ A theme for the [Pelican](http://getpelican.com) static site generator. WIP
 
 ## Screenshot
 
-![pelican-alchemy](https://raw.github.com/nairobilug/pelican-alchemy/master/screenshot.png)
+![pelican-alchemy](screenshot.png)
 
 ## Installation
 
