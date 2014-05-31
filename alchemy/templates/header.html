@@ -9,7 +9,7 @@
             <h1 class="header-name">
                 <a class="nodec" href="{{ SITEURL }}">{{ SITENAME }}</a>
             </h1>
-            <h3 class="header-text">{{ SITETEXT }}</h3>
+            <h3 class="header-text">{{ SITE_SUBTEXT }}</h3>
             <ul class="header-menu list-inline">
                 {% for title, link in MENU_ITEMS %}
                     <li><a class="nodec" href="{{ link }}">{{ title }}</a></li>
@@ -31,7 +31,7 @@
                 {% endif %}
                 {% if FEED_ATOM or FEED_RSS %}
                     <li><a class="nodec icon-rss" href="/{% if FEED_ATOM %}{{ FEED_ATOM }}{% else %}{{ FEED_RSS }}{% endif %}"></a></li>
-                 {% endif %}
+                {% endif %}
             </ul>
         </div>
     </div>
