@@ -1,6 +1,6 @@
 # pelican-alchemy
 
-A theme for the [Pelican](http://getpelican.com) static site generator. A shameless rip off of @porterjamesj's [crowsfoot](http://github.com/porterjamesj/crowsfoot).
+A theme for the [Pelican](http://getpelican.com) static site generator. A shameless rip off of @porterjamesj's [crowsfoot](http://github.com/porterjamesj/crowsfoot) theme.
 
 ## Screenshot
 
