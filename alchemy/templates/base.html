@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+    <head>
+        {% block head %}
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+            {% include "include/feeds.html" %}
+
+            <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+
+            {# HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries #}
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              {# WARNING: Respond.js doesn't work if you view the page via file:// #}
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+            {% include "include/google_analytics.html" %}
+        {% endblock %}
+    </head>
+
+    <body>
+        {% include "header.html" %}
+
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+
+        {% include "footer.html" %}
+
+        <script src="{{ SITEURL }}/theme/js/libs/jquery.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+    </body> <!-- 42 -->
+
+</html>

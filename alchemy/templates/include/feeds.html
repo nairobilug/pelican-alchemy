@@ -1,0 +1,6 @@
+{% if FEED_ATOM %}
+    <link type="application/atom+xml" rel="alternate" href="/{{ FEED_ATOM }}"  title="{{ SITENAME }} Atom Feed">
+{% endif %}
+{% if FEED_RSS %}
+    <link type="application/rss+xml" rel="alternate" href="/{{ FEED_RSS }}" title="{{ SITENAME }} RSS Feed">
+{% endif %}

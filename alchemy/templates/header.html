@@ -1,0 +1,38 @@
+<header class="header">
+    <div class="container">
+        {% if PROFILE_IMAGE %}
+            <div class="header-image pull-left">
+                <a class="nodec" href="{{ SITEURL }}"><img src={{ PROFILE_IMAGE }}></a>
+            </div>
+        {% endif %}
+        <div class="header-inner">
+            <h1 class="header-name">
+                <a class="nodec" href="{{ SITEURL }}">{{ SITENAME }}</a>
+            </h1>
+            <h3 class="header-text">{{ SITE_SUBTEXT }}</h3>
+            <ul class="header-menu list-inline">
+                {% for title, link in MENU_ITEMS %}
+                    <li><a class="nodec" href="{{ link }}">{{ title }}</a></li>
+                {% endfor %}
+                {% if EMAIL_ADDRESS %}
+                    <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
+                {% endif %}
+                {% if GITHUB_ADDRESS %}
+                    <li><a class="nodec icon-github" href="{{ GITHUB_ADDRESS }}"></a></li>
+                {% endif %}
+                {% if SO_ADDRESS %}
+                    <li><a class="nodec icon-stackoverflow" href="{{ SO_ADDRESS }}"></a></li>
+                {% endif %}
+                {% if TWITTER_ADDRESS %}
+                    <li><a class="nodec icon-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
+                {% endif %}
+                {% if FB_ADDRESS %}
+                    <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
+                {% endif %}
+                {% if FEED_ATOM or FEED_RSS %}
+                    <li><a class="nodec icon-rss" href="/{% if FEED_ATOM %}{{ FEED_ATOM }}{% else %}{{ FEED_RSS }}{% endif %}"></a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</header> <!-- /.header -->

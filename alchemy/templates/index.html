@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% block page_title %}
+        <h1>All Articles</h1>
+    {% endblock %}
+    <div>
+        {% for article in articles_page.object_list %}
+            {% include "include/article_list.html" %}
+        {% endfor %}
+    </div>
+    {% include 'pagination.html' %}
+</div>
+{% endblock %}
