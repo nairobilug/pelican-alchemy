@@ -2,9 +2,11 @@
 
 A theme for the [Pelican](http://getpelican.com) static site generator. A shameless rip off of @porterjamesj's [crowsfoot](http://github.com/porterjamesj/crowsfoot) theme.
 
+
 ## Screenshot
 
 ![pelican-alchemy](screenshot.png)
+
 
 ## Installation
 
@@ -12,9 +14,11 @@ A theme for the [Pelican](http://getpelican.com) static site generator. A shamel
 
 Then set the pelican config variable `THEME` to the `alchemy` folder inside the cloned path.
 
+
 ## Usage
 
 Pelican [documentation](http://docs.getpelican.com/en/latest/)
+
 
 ### Theme Options
 
@@ -42,6 +46,12 @@ An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
 | DISQUS_SITENAME           | TEXT  | Disqus sitename   |
 | GOOGLE_ANALYTICS_ID       | TEXT  | Google analytics  |
 | GOOGLE_ANALYTICS_DOMAIN   | TEXT  | Google analytics  |
+
+
+#### Sitemap
+
+Ref: https://github.com/getpelican/pelican/wiki/Tips-n-Tricks#generate-sitemapxml
+
 
 ## Live Demo
 
