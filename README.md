@@ -26,6 +26,7 @@ Pelican [documentation](http://docs.getpelican.com/en/latest/)
 | ------------------------- | ----- | ----------------- |
 | PROFILE_IMAGE             | URL   | Profile image     |
 | SITE_SUBTEXT              | TEXT  | Header subtitle   |
+| META_DESCRIPTION          | TEXT  | Meta description  |
 | MENU_ITEMS                | DICT  | Menu items        |
 | PAGES_ON_MENU             | BOOL  | Pages on the menu |
 | SHOW_ARTICLE_AUTHOR       | BOOL  | Show/hide author  |
