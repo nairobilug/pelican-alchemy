@@ -30,8 +30,8 @@ Pelican [documentation](http://docs.getpelican.com/en/latest/)
 | MENU_ITEMS                | DICT  | Menu items        |
 | PAGES_ON_MENU             | BOOL  | Pages on the menu |
 | SHOW_ARTICLE_AUTHOR       | BOOL  | Show/hide author  |
-| LICENSE_URL               | URL   | Footer action     |
-| LICENSE_NAME              | TEXT  | Hot footer action |
+| LICENSE_URL               | URL   | Footer notice     |
+| LICENSE_NAME              | TEXT  | -                 |
 
 | Config                    | Type  | Description       |
 | ------------------------- | ----- | ----------------- |
