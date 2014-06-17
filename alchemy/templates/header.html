@@ -12,16 +12,16 @@
             <h3 class="header-text">{{ SITE_SUBTEXT }}</h3>
             <ul class="header-menu list-inline">
                 {% for title, link in MENU_ITEMS %}
-                    <li><a class="nodec" href="{{ link }}">{{ title }}</a></li>
+                    <li><a class="nodec" href="{{ link }}" target="_blank">{{ title }}</a></li>
                 {% endfor %}
                 {% if PAGES_ON_MENU %}
                     {% for p in PAGES %}
                         {% if loop.first %}
-                            <li class="muted">&middot;</li>
+                            <li class="muted">|</li>
                         {% endif %}
                         <li><a class="nodec" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                         {% if loop.last %}
-                            <li class="muted">&middot;</li>
+                            <li class="muted">|</li>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
