@@ -24,13 +24,13 @@
     </head>
 
     <body>
-        {% include "header.html" %}
+        {% include "include/header.html" %}
 
         <div class="container">
             {% block content %}{% endblock %}
         </div>
 
-        {% include "footer.html" %}
+        {% include "include/footer.html" %}
 
         <script src="{{ SITEURL }}/theme/js/libs/jquery.min.js"></script>
         <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
