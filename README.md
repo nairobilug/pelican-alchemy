@@ -10,7 +10,7 @@ A theme for the [Pelican](http://getpelican.com) static site generator. A shamel
 
 ## Installation
 
-`git clone https://github.com/nairobilug/pelican-alchemy.git`
+`git clone git@github.com:nairobilug/pelican-alchemy.git`
 
 Then set the pelican config variable `THEME` to the `alchemy` folder inside the cloned path.
 
