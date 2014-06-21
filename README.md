@@ -22,30 +22,30 @@ Pelican [documentation](http://docs.getpelican.com/en/latest/)
 
 ### Theme Options
 
-| Config                    | Type  | Description       |
-| ------------------------- | ----- | ----------------- |
-| LICENSE_NAME              | TEXT  | License (footer)  |
-| LICENSE_URL               | URL   | -                 |
-| MENU_ITEMS                | DICT  | Menu items        |
-| PROFILE_IMAGE             | URL   | Profile image     |
-| SHOW_ARTICLE_AUTHOR       | BOOL  | Show/hide author  |
-| SITE_SUBTEXT              | TEXT  | Header subtitle   |
+| Config                    | Type       | Description               |
+| ------------------------- | ---------- | ------------------------- |
+| LICENSE_NAME              | TEXT       | License (footer)          |
+| LICENSE_URL               | URL        | -                         |
+| MENU_ITEMS                | DICT       | Menu items                |
+| PROFILE_IMAGE             | URL        | Profile image             |
+| SHOW_ARTICLE_AUTHOR       | BOOL       | Show/hide author          |
+| SITE_SUBTEXT              | TEXT       | Header subtitle           |
 
-| Config                    | Type  | Description       |
-| ------------------------- | ----- | ----------------- |
-| EMAIL_ADDRESS             | EMAIL | Email (mailto)    |
-| FB_ADDRESS                | URL   | Facebook          |
-| GITHUB_ADDRESS            | URL   | Github            |
-| SO_ADDRESS                | URL   | Stack Overflow    |
-| TWITTER_ADDRESS           | URL   | Twitter           |
+| Config                    | Type       | Description               |
+| ------------------------- | ---------- | ------------------------- |
+| EMAIL_ADDRESS             | EMAIL      | Email (mailto)            |
+| FB_ADDRESS                | URL        | Facebook                  |
+| GITHUB_ADDRESS            | URL        | Github                    |
+| SO_ADDRESS                | URL        | Stack Overflow            |
+| TWITTER_ADDRESS           | URL        | Twitter                   |
 
 An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
 
-| Config                    | Type  | Description       |
-| ------------------------- | ----- | ----------------- |
-| DISQUS_SITENAME           | TEXT  | Disqus sitename   |
-| GOOGLE_ANALYTICS_DOMAIN   | TEXT  | Google analytics  |
-| GOOGLE_ANALYTICS_ID       | TEXT  | Google analytics  |
+| Config                    | Type       | Description               |
+| ------------------------- | ---------- | ------------------------- |
+| DISQUS_SITENAME           | TEXT       | Disqus sitename           |
+| GOOGLE_ANALYTICS_DOMAIN   | TEXT       | Google analytics          |
+| GOOGLE_ANALYTICS_ID       | TEXT       | Google analytics          |
 
 
 ## Live Demo
