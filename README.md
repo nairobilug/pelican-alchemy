@@ -24,6 +24,7 @@ Pelican [documentation](http://docs.getpelican.com/en/latest/)
 
 | Config                    | Type       | Description               |
 | ------------------------- | ---------- | ------------------------- |
+| EXTRA_FAVICON [^1]        | BOOL       | Extra favicons            |
 | LICENSE_NAME              | TEXT       | License (footer)          |
 | LICENSE_URL               | URL        | -                         |
 | MENU_ITEMS                | DICT       | Menu items                |
@@ -56,3 +57,6 @@ An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
 ## License
 
 MIT
+
+
+[^1]: http://realfavicongenerator.net/faq#why_so_many_files "Why so many files?"
