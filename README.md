@@ -27,6 +27,7 @@ Pelican [documentation](http://docs.getpelican.com/en/latest/)
 | LICENSE_NAME              | TEXT       | License (footer)          |
 | LICENSE_URL               | URL        | -                         |
 | MENU_ITEMS                | DICT       | Menu items                |
+| META_DESCRIPTION          | TEXT       | Meta description          |
 | PROFILE_IMAGE             | URL        | Profile image             |
 | SHOW_ARTICLE_AUTHOR       | BOOL       | Show/hide author          |
 | SITE_SUBTEXT              | TEXT       | Header subtitle           |
