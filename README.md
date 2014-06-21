@@ -48,6 +48,12 @@ An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
 | GOOGLE_ANALYTICS_ID       | TEXT       | Google analytics          |
 
 
+
+#### Sitemap
+
+Ref: https://github.com/getpelican/pelican/wiki/Tips-n-Tricks#generate-sitemapxml
+
+
 ## Live Demo
 
 [nairobilug.or.ke](http://nairobilug.or.ke)
