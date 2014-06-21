@@ -14,6 +14,17 @@
                 {% for title, link in MENU_ITEMS %}
                     <li><a class="nodec" href="{{ link }}" target="_blank">{{ title }}</a></li>
                 {% endfor %}
+                {% if PAGES_ON_MENU %}
+                    {% for p in PAGES %}
+                        {% if loop.first %}
+                            <li class="muted">|</li>
+                        {% endif %}
+                        <li><a class="nodec" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                        {% if loop.last %}
+                            <li class="muted">|</li>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
                 {% if EMAIL_ADDRESS %}
                     <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
                 {% endif %}
