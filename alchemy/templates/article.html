@@ -1,48 +1,48 @@
 {% extends "base.html" %}
 
 {% block head %}
-    {{ super() }}
-    {% if article.author %}
-        <meta name="author" content="{{ article.author }}">
-    {% endif %}
-    {% if article.summary %}
-        <meta name="description" content="{{ article.summary|striptags }}">
-    {% endif %}
-    <meta name="tags" contents="{% for tag in article.tags %}{{ tag }}, {% endfor %}">
+  {{ super() }}
+  {% if article.author %}
+    <meta name="author" content="{{ article.author }}">
+  {% endif %}
+  {% if article.summary %}
+    <meta name="description" content="{{ article.summary|striptags }}">
+  {% endif %}
+  <meta name="tags" contents="{% for tag in article.tags %}{{ tag }}, {% endfor %}">
 {% endblock %}
 
 {% block title %}
-    {{ SITENAME }} &mdash; {{ article.title|striptags }}
+  {{ SITENAME }} &mdash; {{ article.title|striptags }}
 {% endblock %}
 
 {% block content %}
-    <div class="post full-post">
-        <h1 class="post-title">
-            <a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-        </h1>
-        <ul class="list-inline">
-            <li class="post-date">
-                <a class="text-muted" href="/{{ article.url }}" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</a>
-            </li>
-            <li class="muted">&middot;</li>
-            <li class="post-category">
-                <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-            </li>
-            {% if article.author and SHOW_ARTICLE_AUTHOR %}
-                <li class="muted">&middot;</li>
-                <li>
-                    <address class="post-author">
-                        By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-                    </address>
-                </li>
-            {% endif %}
-        </ul>
-        <div class="post-content">
-            {{ article.content }}
-        </div>
+  <div class="post full-post">
+    <h1 class="post-title">
+      <a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+    </h1>
+    <ul class="list-inline">
+      <li class="post-date">
+        <a class="text-muted" href="/{{ article.url }}" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</a>
+      </li>
+      <li class="muted">&middot;</li>
+      <li class="post-category">
+        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+      </li>
+      {% if article.author and SHOW_ARTICLE_AUTHOR %}
+        <li class="muted">&middot;</li>
+        <li>
+          <address class="post-author">
+            By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+          </address>
+        </li>
+      {% endif %}
+    </ul>
+    <div class="post-content">
+      {{ article.content }}
     </div>
-    <hr class="separator">
-    <div class="col-md-8 col-md-offset-2">
-        {% include 'include/disqus_comments.html' %}
-    </div>
+  </div>
+  <hr class="separator">
+  <div class="col-md-8 col-md-offset-2">
+    {% include 'include/disqus_comments.html' %}
+  </div>
 {% endblock %}
