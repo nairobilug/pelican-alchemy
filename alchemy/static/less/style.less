@@ -44,11 +44,6 @@ a {
   }
 }
 
-pre,
-img {
-  border-radius: 4px;
-}
-
 .container {
   max-width: 970px;
 }
@@ -99,8 +94,8 @@ img {
 .post {
   font-size: 16px;
   &.mini-post {
-    padding: 30px 0;
     border-bottom: 1px solid #ddd;
+    padding: 30px 0;
     &:last-child {
       border-bottom: none;
     }
@@ -115,14 +110,21 @@ img {
       font-size: 18px;
     }
   }
-  &.full-post {
-    * img {
-      max-width: 940px;
+  .post-content {
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      width: 100% \9;
+    }
+    pre,
+    img {
+      .border-radius(4px);
     }
   }
 }
 
 .separator {
-  margin-top: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
