@@ -29,6 +29,10 @@ samp {
   font-family: @monospace;
 }
 
+pre {
+  border: none;
+}
+
 a {
   .transition(color 0.2s ease-in-out);
   color: #2e2e2e;
@@ -38,6 +42,10 @@ a {
   &.nodec {
     text-decoration: none;
   }
+}
+
+.container {
+  max-width: 970px;
 }
 
 .header {
@@ -86,8 +94,8 @@ a {
 .post {
   font-size: 16px;
   &.mini-post {
-    padding: 30px 0;
     border-bottom: 1px solid #ddd;
+    padding: 30px 0;
     &:last-child {
       border-bottom: none;
     }
@@ -102,23 +110,21 @@ a {
       font-size: 18px;
     }
   }
-  &.full-post {
-    * img {
-      max-width: 940px;
+  .post-content {
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      width: 100% \9;
+    }
+    pre,
+    img {
+      .border-radius(4px);
     }
   }
 }
 
-// .highlight {
-//     width: 600px;
-//     margin-left: 50px;
-//     margin-bottom: 20px;
-//     overflow: auto;
-//     border: 1px solid grey;
-//     border-radius: 5px;
-// }
-
 .separator {
-  margin-top: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
