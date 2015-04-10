@@ -25,6 +25,18 @@
             {% endif %}
           {% endfor %}
         {% endif %}
+        {% if CATEGORIES_ON_MENU %}
+          <li><a class="nodec" href="{{ SITEURL }}/categories.html">Categories</a></li>
+          <li class="muted">|</li>
+        {% endif %}
+        {% if TAGS_ON_MENU %}
+          <li><a class="nodec" href="{{ SITEURL }}/tags.html">Tags</a></li>
+          <li class="muted">|</li>
+        {% endif %}
+        {% if ARCHIVES_ON_MENU %}
+          <li><a class="nodec" href="{{ SITEURL }}/archives.html">Archives</a></li>
+          <li class="muted">|</li>
+        {% endif %}
         {% if EMAIL_ADDRESS %}
           <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
         {% endif %}

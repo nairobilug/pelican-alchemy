@@ -30,6 +30,9 @@ Pelican [documentation](http://docs.getpelican.com/en/latest/)
 | MENU_ITEMS                | DICT       | Menu items                |
 | META_DESCRIPTION          | TEXT       | Meta description          |
 | PAGES_ON_MENU             | BOOL       | Pages on the menu         |
+| CATEGORIES_ON_MENU        | BOOL       | Category link in menu     |
+| TAGS_ON_MENU              | BOOL       | Tag link in menu          |
+| ARCHIVES_ON_MENU          | BOOL       | Archives link in menu     |
 | PROFILE_IMAGE             | URL        | Profile image             |
 | SHOW_ARTICLE_AUTHOR       | BOOL       | Show/hide author          |
 | SITE_SUBTEXT              | TEXT       | Header subtitle           |
