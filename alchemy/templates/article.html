@@ -28,6 +28,14 @@
       <li class="post-category">
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       </li>
+      {% if article.tags %}
+        <li class="muted">&middot;</li>
+        <li>
+          {% for tag in article.tags %}
+            <a href="{{ SITEUrL }}/tag/{{ tag }}.html">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        </li>
+      {% endif %}
       {% if article.author and SHOW_ARTICLE_AUTHOR %}
         <li class="muted">&middot;</li>
         <li>
