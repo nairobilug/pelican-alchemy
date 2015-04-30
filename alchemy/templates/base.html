@@ -27,6 +27,7 @@
     {% endif %}
 
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/fluidbox.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -47,6 +48,25 @@
 
   <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
   <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.fluidbox.min.js"></script>
+  <script>
+        $('.full-post a[data-fluidbox]').fluidbox();
+        // Trigger recomputing on Flexbox items, sometimes buggy width calculations due to browser recomputation of flex items
+        $('.cols').each(function() {
+            var a = [],
+                $f = $(this).find('a.fluidbox');
+
+            $f.find('img').each(function() {
+                var i = $.Deferred();
+                $(this).load(i.resolve).error(i.resolve);
+                a.push(i);
+            });
+
+            $.when.apply(null, a).done(function() {
+                $f.trigger('recompute');
+            });
+        });
+  </script>
 </body> <!-- 42 -->
 
 </html>
