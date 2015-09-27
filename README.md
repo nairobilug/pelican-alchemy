@@ -53,6 +53,19 @@ An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
 | GOOGLE_ANALYTICS_DOMAIN   | TEXT       | Google analytics          |
 | GOOGLE_ANALYTICS_ID       | TEXT       | Google analytics          |
 
+To include social buttons on articles add the following.
+
+| Config					| Type		 | Description				 |
+| ------------------------- | ---------- | ------------------------- |
+| TWITTER_USERNAME          | TEXT       | Twitter username          |
+| CUSTOM_ARTICLE_FOOTERS    | DICT       | Add sharing.html          |
+| CUSTOM_SCRIPTS_ARTICLE    | TEXT       | Add sharing_scripts.html  |
+
+An example of pelicanconf.py file for adding social buttons.
+
+TWITTER_USERNAME = "your twitter username"
+CUSTOM_ARTICLE_FOOTERS = ('sharing.html',)
+CUSTOM_SCRIPTS_ARTICLE = "sharing_scripts.html"
 
 ## Live Demo
 
