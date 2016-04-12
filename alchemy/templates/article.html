@@ -32,7 +32,7 @@
         <li class="muted">&middot;</li>
         <li>
           {% for tag in article.tags %}
-            <a href="{{ SITEUrL }}/tag/{{ tag }}.html">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
           {% endfor %}
         </li>
       {% endif %}
