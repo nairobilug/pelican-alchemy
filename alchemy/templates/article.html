@@ -49,6 +49,14 @@
       {{ article.content }}
     </div>
   </div>
+  {% for file in CUSTOM_ARTICLE_FOOTERS %}
+  {% include "include/" + file %}
+  {% endfor %}
+  {% block scripts %}
+  {% if CUSTOM_SCRIPTS_ARTICLE %}
+  {% include "include/" + CUSTOM_SCRIPTS_ARTICLE %}
+  {% endif %}
+  {% endblock %}
   <hr class="separator">
   <div class="col-md-8 col-md-offset-2">
     {% include 'include/disqus_comments.html' %}
