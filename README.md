@@ -1,67 +1,45 @@
 # pelican-alchemy
 
-A theme for the [Pelican](http://getpelican.com) static site generator. A shameless rip off of @porterjamesj's [crowsfoot](http://github.com/porterjamesj/crowsfoot) theme.
+A clean, functional theme for [Pelican](http://getpelican.com). Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot), and powered by [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) (Bootstrap).
 
+Live demo: [nairobilug.or.ke](http://nairobilug.or.ke)
 
-## Screenshot
+![Screenshot](/screenshot.png "Screenshot")
 
-![pelican-alchemy](screenshot.png)
-
+---
 
 ## Installation
 
-`git clone git@github.com:nairobilug/pelican-alchemy.git`
+    $ git clone git@github.com:nairobilug/pelican-alchemy.git
 
 Then set the pelican config variable `THEME` to the `alchemy` folder inside the cloned path.
-
-
-## Usage
-
-Pelican [documentation](http://docs.getpelican.com/en/latest/)
-
 
 ### Theme Options
 
 | Config                    | Type       | Description               |
 | ------------------------- | ---------- | ------------------------- |
-| EXTRA_FAVICON [^1]        | BOOL       | Extra favicons            |
-| LICENSE_NAME              | TEXT       | License (footer)          |
-| LICENSE_URL               | URL        | -                         |
-| MENU_ITEMS                | DICT       | Menu items                |
-| META_DESCRIPTION          | TEXT       | Meta description          |
-| PAGES_ON_MENU             | BOOL       | Pages on the menu         |
-| CATEGORIES_ON_MENU        | BOOL       | Category link in menu     |
-| TAGS_ON_MENU              | BOOL       | Tag link in menu          |
-| ARCHIVES_ON_MENU          | BOOL       | Archives link in menu     |
-| PROFILE_IMAGE             | URL        | Profile image             |
-| SHOW_ARTICLE_AUTHOR       | BOOL       | Show/hide author          |
-| SITE_SUBTEXT              | TEXT       | Header subtitle           |
+| SITE_TAGLINE              | TEXT       | Site tagline/slogan       |
+| SITE_DESCRIPTION          | TEXT       | HEAD meta description     |
+| SITE_IMAGE                | URL        | Site (profile) image      |
+| SHOW_ARTICLE_AUTHOR       | BOOL       | Show article authors      |
+| SHOW_FAVICONS             | BOOL       | Show favicons [^1]        |
+| SHOW_FOOTER_ARCHIVES      | BOOL       | Show `Archives` link      |
+| SHOW_FOOTER_AUTHORS       | BOOL       | Show `Authors` link       |
+| SHOW_FOOTER_CATEGORIES    | BOOL       | Show `Categories` link    |
+| SHOW_FOOTER_TAGS          | BOOL       | Show `Tags` link          |
+| SHOW_HEADER_PAGES         | BOOL       | Show 'Pages' links        |
+| HEADER_LINKS              | LIST       | `('title', 'url')` list   |
+| GITHUB_ADDRESS            | URL        | Github link icon          |
+| TWITTER_ADDRESS           | URL        | Twitter link icon         |
+| GOOGLE_ADDRESS            | URL        | Google+ link icon         |
+| EMAIL_ADDRESS             | EMAIL      | Email link (`mailto:`)    |
+| FACEBOOK_ADDRESS          | URL        | Facebook link icon        |
+| DISQUS_SITENAME           | TEXT       | Disqus comments           |
 
-| Config                    | Type       | Description               |
-| ------------------------- | ---------- | ------------------------- |
-| EMAIL_ADDRESS             | EMAIL      | Email (mailto)            |
-| FB_ADDRESS                | URL        | Facebook                  |
-| GITHUB_ADDRESS            | URL        | Github                    |
-| SO_ADDRESS                | URL        | Stack Overflow            |
-| TWITTER_ADDRESS           | URL        | Twitter                   |
-
-An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
-
-| Config                    | Type       | Description               |
-| ------------------------- | ---------- | ------------------------- |
-| DISQUS_SITENAME           | TEXT       | Disqus sitename           |
-| GOOGLE_ANALYTICS_DOMAIN   | TEXT       | Google analytics          |
-| GOOGLE_ANALYTICS_ID       | TEXT       | Google analytics          |
-
-
-## Live Demo
-
-[nairobilug.or.ke](http://nairobilug.or.ke)
-
+An RSS icon will also appear on the nav if `FEED_ALL_ATOM` is set.
 
 ## License
 
-MIT
+MIT License
 
-
-[^1]: http://realfavicongenerator.net/faq#why_so_many_files "Why so many files?"
+[^1]: http://realfavicongenerator.net "realfavicongenerator.net"
