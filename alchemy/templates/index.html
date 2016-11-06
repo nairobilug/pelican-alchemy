@@ -26,7 +26,7 @@ All Articles
     </div>
     <div class="col-sm-8 teaser-main">
       <h2><a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-      <p>{{ article.content|striptags|truncate(256) }}</p>
+      <p>{{ article.summary }}</p>
     </div>
   </div>
 </div>
