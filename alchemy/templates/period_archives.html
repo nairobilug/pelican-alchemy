@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block title %}
-Archives {{ super() }}
+Archives for {{ period | reverse | join(' ') }} {{ super() }}
 {% endblock %}
 
 {% block page_header %}
-Archives
+Archives for {{ period | reverse | join(' ') }}
 {% endblock %}
 
 {% block content %}
