@@ -1,67 +1,66 @@
 # pelican-alchemy
 
-A theme for the [Pelican](http://getpelican.com) static site generator. A shameless rip off of @porterjamesj's [crowsfoot](http://github.com/porterjamesj/crowsfoot) theme.
+A clean, functional, and lean theme for the [Pelican](http://getpelican.com) static site generator. Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot), powered by [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
 
+![Screenshot](/screenshot.png "Screenshot")
 
-## Screenshot
-
-![pelican-alchemy](screenshot.png)
-
+---
 
 ## Installation
 
-`git clone git@github.com:nairobilug/pelican-alchemy.git`
+    $ git clone git@github.com:nairobilug/pelican-alchemy.git
 
 Then set the pelican config variable `THEME` to the `alchemy` folder inside the cloned path.
 
-
-## Usage
-
-Pelican [documentation](http://docs.getpelican.com/en/latest/)
-
-
-### Theme Options
+## Theme Options
 
 | Config                    | Type       | Description               |
 | ------------------------- | ---------- | ------------------------- |
-| EXTRA_FAVICON [^1]        | BOOL       | Extra favicons            |
-| LICENSE_NAME              | TEXT       | License (footer)          |
-| LICENSE_URL               | URL        | -                         |
-| MENU_ITEMS                | DICT       | Menu items                |
-| META_DESCRIPTION          | TEXT       | Meta description          |
-| PAGES_ON_MENU             | BOOL       | Pages on the menu         |
-| CATEGORIES_ON_MENU        | BOOL       | Category link in menu     |
-| TAGS_ON_MENU              | BOOL       | Tag link in menu          |
-| ARCHIVES_ON_MENU          | BOOL       | Archives link in menu     |
-| PROFILE_IMAGE             | URL        | Profile image             |
-| SHOW_ARTICLE_AUTHOR       | BOOL       | Show/hide author          |
-| SITE_SUBTEXT              | TEXT       | Header subtitle           |
+| SITE_TAGLINE              | TEXT       | Site tagline/slogan       |
+| SITE_DESCRIPTION          | TEXT       | <head> meta description   |
+| SITE_IMAGE                | URL        | Site (profile) image      |
+| SHOW_ARTICLE_AUTHOR       | BOOL       | Show article authors      |
+| SHOW_FAVICONS             | BOOL       | Show site favicons [^1]   |
+| SHOW_FOOTER_ARCHIVES      | BOOL       | Show `Archives` link      |
+| SHOW_FOOTER_AUTHORS       | BOOL       | Show `Authors` link       |
+| SHOW_FOOTER_CATEGORIES    | BOOL       | Show `Categories` link    |
+| SHOW_FOOTER_TAGS          | BOOL       | Show `Tags` link          |
+| SHOW_HEADER_PAGES         | BOOL       | Show Pages in header      |
+| GITHUB_ADDRESS            | URL        | Github icon               |
+| TWITTER_ADDRESS           | URL        | Twitter icon              |
+| GOOGLE_ADDRESS            | URL        | Google+ icon              |
+| EMAIL_ADDRESS             | EMAIL      | Email (`mailto:`)         |
+| FACEBOOK_ADDRESS          | URL        | Facebook icon             |
+| DISQUS_SITENAME           | TEXT       | Disqus comments           |
 
-| Config                    | Type       | Description               |
-| ------------------------- | ---------- | ------------------------- |
-| EMAIL_ADDRESS             | EMAIL      | Email (mailto)            |
-| FB_ADDRESS                | URL        | Facebook                  |
-| GITHUB_ADDRESS            | URL        | Github                    |
-| SO_ADDRESS                | URL        | Stack Overflow            |
-| TWITTER_ADDRESS           | URL        | Twitter                   |
+An RSS icon will also appear on the nav if `FEED_ALL_ATOM` is set.
 
-An RSS icon will also appear on the nav if `FEED_ATOM` or `FEED_RSS` is set.
+## Structure
 
-| Config                    | Type       | Description               |
-| ------------------------- | ---------- | ------------------------- |
-| DISQUS_SITENAME           | TEXT       | Disqus sitename           |
-| GOOGLE_ANALYTICS_DOMAIN   | TEXT       | Google analytics          |
-| GOOGLE_ANALYTICS_ID       | TEXT       | Google analytics          |
+The theme follows the following structure:
 
+    ├── static
+    │   ├── css
+    │   └── images
+    └── templates
+        ├── archives.html         // to display archives
+        ├── period_archives.html  // to display time-period archives
+        ├── article.html          // processed for each article
+        ├── author.html           // processed for each author
+        ├── authors.html          // must list all the authors
+        ├── categories.html       // must list all the categories
+        ├── category.html         // processed for each category
+        ├── index.html            // the index (list all the articles)
+        ├── page.html             // processed for each page
+        ├── tag.html              // processed for each tag
+        └── tags.html             // must list all the tags. Can be a tag cloud.
 
 ## Live Demo
 
 [nairobilug.or.ke](http://nairobilug.or.ke)
 
-
 ## License
 
-MIT
+MIT License
 
-
-[^1]: http://realfavicongenerator.net/faq#why_so_many_files "Why so many files?"
+[^1]: http://realfavicongenerator.net "realfavicongenerator.net"
