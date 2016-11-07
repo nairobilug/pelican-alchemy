@@ -9,9 +9,12 @@ Categories
 {% endblock %}
 
 {% block content %}
-<ul class="list-unstyled">
-  {% for category, articles in categories %}
-  <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+<table class="table table-bordered table-striped table-hover">
+  {% for category, articles in categories|sort %}
+  <tr>
+    <td><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></td>
+    <td>{{ articles|count }}</td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
 {% endblock %}

@@ -9,9 +9,12 @@ Tags
 {% endblock %}
 
 {% block content %}
-<ul class="list-unstyled">
+<table class="table table-bordered table-striped table-hover">
   {% for tag, articles in tags|sort %}
-  <li><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a> ({{ articles|count }})</li>
+  <tr>
+    <td><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a></td>
+    <td>{{ articles|count }}</td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
 {% endblock %}

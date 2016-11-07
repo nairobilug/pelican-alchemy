@@ -9,9 +9,12 @@ Authors
 {% endblock %}
 
 {% block content %}
-<ul class="list-unstyled">
+<table class="table table-bordered table-striped table-hover">
   {% for author, articles in authors|sort %}
-  <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
+  <tr>
+    <td><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a></td>
+    <td>{{ articles|count }}</td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
 {% endblock %}
