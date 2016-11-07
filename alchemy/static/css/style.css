@@ -35,7 +35,6 @@ a:hover {
 
 .header {
   border-bottom: 1px solid #ddd;
-  padding-top: 20px;
 }
 
 .main {
@@ -48,18 +47,26 @@ a:hover {
   padding: 20px 0;
 }
 
-.header img,
-.header nav {
-  margin-bottom: 20px;
+.header img {
+  margin: 20px 0;
 }
 
 .header h1 {
+  font-size: 3em;
   font-weight: bold;
-  margin-top: 0;
 }
 
 .header p {
-  font-size: 1.1em;;
+  font-size: 1.1em;
+  margin: 20px 0;
+}
+
+.header nav {
+  margin-bottom: 10px;
+}
+
+.header nav li {
+  margin-bottom: 10px;
 }
 
 .page-header {
