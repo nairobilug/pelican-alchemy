@@ -48,6 +48,7 @@ a:hover {
 }
 
 .header img {
+  border: 4px solid #333;
   margin: 20px 0;
 }
 
@@ -96,4 +97,8 @@ a:hover {
 .article blockquote ul:first-child,
 .article blockquote ol:first-child {
   margin-top: 0;
+}
+
+.highlight pre {
+  border: none;
 }
