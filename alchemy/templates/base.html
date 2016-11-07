@@ -58,16 +58,16 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
-          {% if SITE_IMAGE %}
+        {% if SITE_IMAGE %}
+        <div class="col-sm-4 hidden-xs">
           <a href="{{ SITEURL }}"><img class="img-responsive" src={{ SITE_IMAGE }}></a>
-          {% endif %}
         </div>
-        <div class="col-sm-8">
+        {% endif %}
+        <div class="col-sm-{% if SITE_IMAGE %}8{% else %}12{% endif %}">
           <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
           <p>{{ SITE_TAGLINE }}</p>
+          {% if HEADER_LINKS or PAGES or EMAIL_ADDRESS or FACEBOOK_ADDRESS or FEED_ALL_ATOM or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
           <hr>
-          {% if HEADER_LINKS or SHOW_HEADER_PAGES or EMAIL_ADDRESS or FACEBOOK_ADDRESS or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
           <nav class="list-inline">
             {% if HEADER_LINKS %}
             {% for title, link in HEADER_LINKS %}
@@ -75,13 +75,15 @@
             {% endfor %}
             {% endif %}
             {% for p in PAGES %}
-            {% if loop.first %}
+            {% if HEADER_LINKS and loop.first %}
             <li class="text-muted">|</li>
             {% endif %}
             <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
-            {% if EMAIL_ADDRESS or FACEBOOK_ADDRESS or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
+            {% if EMAIL_ADDRESS or FACEBOOK_ADDRESS or FEED_ALL_ATOM or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
+            {% if HEADER_LINKS or PAGES %}
             <li class="text-muted">|</li>
+            {% endif %}
             {% endif %}
             {% if EMAIL_ADDRESS %}
             <li><a class="fa fa-fw fa-envelope" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
@@ -90,7 +92,7 @@
             <li><a class="fa fa-fw fa-facebook" href="{{ FACEBOOK_ADDRESS }}" target="_blank"></a></li>
             {% endif %}
             {% if FEED_ALL_ATOM %}
-            <li><a class="fa fa-fw fa-feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"></a></li>
+            <li><a class="fa fa-fw fa-feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" target="_blank"></a></li>
             {% endif %}
             {% if GITHUB_ADDRESS %}
             <li><a class="fa fa-fw fa-github" href="{{ GITHUB_ADDRESS }}" target="_blank"></a></li>
