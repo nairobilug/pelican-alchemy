@@ -19,7 +19,7 @@ All Articles
   <header class="col-sm-4 hidden-xs">
     <div class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</div>
     <div><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
-    {% if article.author and SHOW_ARTICLE_AUTHOR %}
+    {% if article.author and SHOW_ARTICLE_AUTHORS %}
     <div>By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></div>
     {% endif %}
   </header>

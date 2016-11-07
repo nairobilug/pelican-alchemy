@@ -20,7 +20,7 @@
       <li class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</li>
       <li>&middot;</li>
       <li><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></li>
-      {% if article.author and SHOW_ARTICLE_AUTHOR %}
+      {% if article.author and SHOW_ARTICLE_AUTHORS %}
       <li>&middot;</li>
       <li>By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></li>
       {% endif %}

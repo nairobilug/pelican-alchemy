@@ -66,42 +66,42 @@
         <div class="col-sm-{% if SITE_IMAGE %}8{% else %}12{% endif %}">
           <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
           <p>{{ SITE_TAGLINE }}</p>
-          {% if HEADER_LINKS or PAGES or EMAIL_ADDRESS or FACEBOOK_ADDRESS or FEED_ALL_ATOM or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
+          {% if EXTERNAL_LINKS or PAGES or EMAIL_LINK or FACEBOOK_LINK or FEED_ALL_ATOM or GITHUB_LINK or GOOGLE_LINK or TWITTER_LINK %}
           <hr>
           <nav class="list-inline">
-            {% if HEADER_LINKS %}
-            {% for title, link in HEADER_LINKS %}
+            {% if EXTERNAL_LINKS %}
+            {% for title, link in EXTERNAL_LINKS %}
             <li><a href="{{ link }}" target="_blank">{{ title }}</a></li>
             {% endfor %}
             {% endif %}
             {% for p in PAGES %}
-            {% if HEADER_LINKS and loop.first %}
+            {% if EXTERNAL_LINKS and loop.first %}
             <li class="text-muted">|</li>
             {% endif %}
             <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
-            {% if EMAIL_ADDRESS or FACEBOOK_ADDRESS or FEED_ALL_ATOM or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
-            {% if HEADER_LINKS or PAGES %}
+            {% if EMAIL_LINK or FACEBOOK_LINK or FEED_ALL_ATOM or GITHUB_LINK or GOOGLE_LINK or TWITTER_LINK %}
+            {% if EXTERNAL_LINKS or PAGES %}
             <li class="text-muted">|</li>
             {% endif %}
             {% endif %}
-            {% if EMAIL_ADDRESS %}
-            <li><a class="fa fa-fw fa-envelope" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
+            {% if EMAIL_LINK %}
+            <li><a class="fa fa-fw fa-envelope" href="mailto:{{ EMAIL_LINK }}"></a></li>
             {% endif %}
-            {% if FACEBOOK_ADDRESS %}
-            <li><a class="fa fa-fw fa-facebook" href="{{ FACEBOOK_ADDRESS }}" target="_blank"></a></li>
+            {% if FACEBOOK_LINK %}
+            <li><a class="fa fa-fw fa-facebook" href="{{ FACEBOOK_LINK }}" target="_blank"></a></li>
             {% endif %}
             {% if FEED_ALL_ATOM %}
             <li><a class="fa fa-fw fa-feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" target="_blank"></a></li>
             {% endif %}
-            {% if GITHUB_ADDRESS %}
-            <li><a class="fa fa-fw fa-github" href="{{ GITHUB_ADDRESS }}" target="_blank"></a></li>
+            {% if GITHUB_LINK %}
+            <li><a class="fa fa-fw fa-github" href="{{ GITHUB_LINK }}" target="_blank"></a></li>
             {% endif %}
-            {% if GOOGLE_ADDRESS %}
-            <li><a class="fa fa-fw fa-google-plus" href="{{ GOOGLE_ADDRESS }}" target="_blank"></a></li>
+            {% if GOOGLE_LINK %}
+            <li><a class="fa fa-fw fa-google-plus" href="{{ GOOGLE_LINK }}" target="_blank"></a></li>
             {% endif %}
-            {% if TWITTER_ADDRESS %}
-            <li><a class="fa fa-fw fa-twitter" href="{{ TWITTER_ADDRESS }}" target="_blank"></a></li>
+            {% if TWITTER_LINK %}
+            <li><a class="fa fa-fw fa-twitter" href="{{ TWITTER_LINK }}" target="_blank"></a></li>
             {% endif %}
           </nav>
           {% endif %}
@@ -124,7 +124,7 @@
       <div class="row">
         <div class="col-sm-6">
           <nav class="list-inline">
-            {% if SHOW_ARTICLE_AUTHOR %}
+            {% if SHOW_ARTICLE_AUTHORS %}
             <li><a href="{{ SITEURL }}/authors.html">Authors</a></li>
             {% endif %}
             <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
