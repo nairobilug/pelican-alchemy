@@ -2,11 +2,11 @@
 
 {% block head %}
 {{ super() }}
-<meta name="description" content="{{ SITE_DESCRIPTION|striptags }}">
+<meta name="description" content="{{ META_DESCRIPTION|striptags }}">
 {% endblock %}
 
 {% block title %}
-{{ SITENAME }} &mdash; {{ SITE_TAGLINE }}
+{{ SITENAME }} &mdash; {{ SITESUBTITLE }}
 {% endblock %}
 
 {% block page_header %}
@@ -19,7 +19,7 @@ All Articles
   <header class="col-sm-4 hidden-xs">
     <div class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</div>
     <div><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
-    {% if article.authors and SHOW_ARTICLE_AUTHORS %}
+    {% if article.authors and ARTICLE_AUTHORS %}
     <div>By
       {% for author in article.authors %}
       <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
