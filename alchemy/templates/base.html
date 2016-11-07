@@ -10,28 +10,28 @@
   <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
 
   {% if FEED_ALL_ATOM %}
-  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="{{ SITENAME }} Full Atom Feed">
+  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="Full Atom Feed">
   {% endif %}
   {% if FEED_ALL_RSS %}
-  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="{{ SITENAME }} Full RSS Feed">
+  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="Full RSS Feed">
   {% endif %}
   {% if FEED_ATOM %}
-  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" title="{{ SITENAME }} Atom Feed">
+  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" title="Atom Feed">
   {% endif %}
   {% if FEED_RSS %}
-  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" title="{{ SITENAME }} RSS Feed">
+  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" title="RSS Feed">
   {% endif %}
   {% if CATEGORY_FEED_ATOM and category %}
-  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" title="{{ SITENAME }} Categories Atom Feed">
+  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" title="Categories Atom Feed">
   {% endif %}
   {% if CATEGORY_FEED_RSS and category %}
-  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" title="{{ SITENAME }} Categories RSS Feed">
+  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" title="Categories RSS Feed">
   {% endif %}
   {% if TAG_FEED_ATOM and tag %}
-  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" title="{{ SITENAME }} Tags Atom Feed">
+  <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" title="Tags Atom Feed">
   {% endif %}
   {% if TAG_FEED_RSS and tag %}
-  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" title="{{ SITENAME }} Tags RSS Feed">
+  <link rel="alternate" type="application/rss+xml" href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" title="Tags RSS Feed">
   {% endif %}
 
   {% if SHOW_FAVICONS %}
