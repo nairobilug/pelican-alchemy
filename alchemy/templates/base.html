@@ -55,7 +55,7 @@
 </head>
 
 <body>
-  <div class="header">
+  <header class="header">
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
@@ -68,7 +68,7 @@
           <p>{{ SITE_TAGLINE }}</p>
           <hr>
           {% if HEADER_LINKS or SHOW_HEADER_PAGES or EMAIL_ADDRESS or FACEBOOK_ADDRESS or GITHUB_ADDRESS or GOOGLE_ADDRESS or TWITTER_ADDRESS %}
-          <ul class="list-inline">
+          <nav class="list-inline">
             {% if HEADER_LINKS %}
             {% for title, link in HEADER_LINKS %}
             <li><a href="{{ link }}" target="_blank">{{ title }}</a></li>
@@ -103,12 +103,12 @@
             {% if TWITTER_ADDRESS %}
             <li><a class="fa fa-fw fa-twitter" href="{{ TWITTER_ADDRESS }}" target="_blank"></a></li>
             {% endif %}
-          </ul>
+          </nav>
           {% endif %}
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <div class="main">
     <div class="container">
@@ -119,12 +119,12 @@
     </div>
   </div>
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
           {% if SHOW_FOOTER_AUTHORS or SHOW_FOOTER_ARCHIVES or SHOW_FOOTER_CATEGORIES or SHOW_FOOTER_TAGS %}
-          <ul class="list-inline">
+          <nav class="list-inline">
             {% if SHOW_ARTICLE_AUTHOR and SHOW_FOOTER_AUTHORS %}
             <li><a href="{{ SITEURL }}/authors.html">Authors</a></li>
             {% endif %}
@@ -137,7 +137,7 @@
             {% if SHOW_FOOTER_TAGS %}
             <li><a href="{{ SITEURL }}/tags.html">Tags</a></li>
             {% endif %}
-          </ul>
+          </nav>
           {% endif %}
         </div>
         <div class="col-sm-6 hidden-xs text-right text-muted">
@@ -145,7 +145,7 @@
         </div>
       </div>
     </div>
-  </div>
-</body> <!-- 42 -->
+  </footer>
+</body>
 
 </html>

@@ -14,8 +14,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="article">
-  <div class="article-header">
+<article class="article">
+  <header>
     <ul class="list-inline">
       <li class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</li>
       <li>&middot;</li>
@@ -33,10 +33,8 @@
       </li>
       {% endif %}
     </ul>
-  </div>
-  <div class="article-main">
-    {{ article.content }}
-  </div>
-</div>
+  </header>
+  {{ article.content }}
+</article>
 {% include 'include/comments.html' %}
 {% endblock %}

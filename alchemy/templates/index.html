@@ -15,21 +15,19 @@ All Articles
 
 {% block content %}
 {% for article in articles_page.object_list %}
-<div class="teaser">
-  <div class="row">
-    <div class="col-sm-4 hidden-xs teaser-header">
-      <div class="text-muted teaser-date" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</div>
-      <div><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
-      {% if article.author and SHOW_ARTICLE_AUTHOR %}
-      <div>By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></div>
-      {% endif %}
-    </div>
-    <div class="col-sm-8 teaser-main">
-      <h2><a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-      <p>{{ article.summary }}</p>
-    </div>
+<article class="row teaser">
+  <header class="col-sm-4 hidden-xs">
+    <div class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</div>
+    <div><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
+    {% if article.author and SHOW_ARTICLE_AUTHOR %}
+    <div>By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></div>
+    {% endif %}
+  </header>
+  <div class="col-sm-8">
+    <h3><a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+    {{ article.summary }}
   </div>
-</div>
+</article>
 {% if not loop.last %}
 <hr>
 {% endif %}
