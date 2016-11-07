@@ -2,9 +2,7 @@
 
 {% block head %}
 {{ super() }}
-{% if article.summary %}
 <meta name="description" content="{{ article.summary|striptags }}">
-{% endif %}
 {% endblock %}
 
 {% block title %}
