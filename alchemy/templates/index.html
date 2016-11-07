@@ -30,7 +30,9 @@ All Articles
     </div>
   </div>
 </div>
+{% if not loop.last %}
 <hr>
+{% endif %}
 {% endfor %}
 {% include 'include/pagination.html' %}
 {% endblock %}

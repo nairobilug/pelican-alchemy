@@ -5,17 +5,32 @@ body {
   font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
   font-weight: normal;
 }
 
-a:focus, a:hover {
-  color: #ff9800;
-}
-
 .container {
   max-width: 970px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #333;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+a:focus,
+a:hover {
+  color: #ff9800;
 }
 
 .header {
@@ -33,12 +48,12 @@ a:focus, a:hover {
   padding: 20px 0;
 }
 
-.header img, .header ul {
+.header img,
+.header ul {
   margin-bottom: 20px;
 }
 
 .header h1 {
-  font-size: 2.0em;
   font-weight: bold;
   margin-top: 0;
 }
@@ -51,31 +66,27 @@ a:focus, a:hover {
   margin-top: 0;
 }
 
-.page-header h1 {
-  font-size: 2.8em;
-}
-
-.teaser h2 {
-  font-size: 1em;;
-  line-height: 1.42857143; /* WTF */
+.teaser h3 {
   margin: 0 0 30px;
-  font-weight: bold;
 }
 
 .teaser p {
   margin: 0;
 }
 
-.teaser-header div {
+.teaser header div {
   margin-bottom: 10px;
 }
 
-.teaser-date {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
-  margin: 0 0 30px;
+.article blockquote,
+.article ul,
+.article ol,
+.article .highlight {
+  margin: 30px 0;
 }
 
-.section-heading {
-  font-weight: normal;
-  margin-top: 40px;
+.article blockquote p:first-child,
+.article blockquote ul:first-child,
+.article blockquote ol:first-child {
+  margin-top: 0;
 }
