@@ -28,7 +28,7 @@ All Articles
     {% endif %}
   </header>
   <div class="col-sm-8">
-    <h3><a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+    <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
     {{ article.summary }}
   </div>
 </article>
