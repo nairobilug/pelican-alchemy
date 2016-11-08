@@ -69,7 +69,7 @@
           <p>{{ SITESUBTITLE }}</p>
           {% if LINKS or PAGES or FACEBOOK_URL or FEED_ALL_ATOM or GITHUB_URL or G_PLUS_URL or TWITTER_URL %}
           <hr>
-          <nav class="list-inline">
+          <ul class="list-inline">
             {% if LINKS %}
             {% for title, link in LINKS %}
             <li><a href="{{ link }}" target="_blank">{{ title }}</a></li>
@@ -101,7 +101,7 @@
             {% if TWITTER_URL %}
             <li><a class="fa fa-fw fa-twitter" href="{{ TWITTER_URL }}" target="_blank"></a></li>
             {% endif %}
-          </nav>
+          </ul>
           {% endif %}
         </div>
       </div>
