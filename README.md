@@ -1,12 +1,16 @@
 # pelican-alchemy
 
-A clean, functional theme for [Pelican](http://getpelican.com). Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot), and powered by [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) (Bootstrap).
+A magical ✨ [Pelican](http://getpelican.com) theme. Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
+
+Powered by [Bootstrap](https://github.com/twbs/bootstrap) (v3.x).
+
+---
+
+## Screenshot
 
 Live demo: [nairobilug.or.ke](http://nairobilug.or.ke)
 
 ![Screenshot](/screenshot.png "Screenshot")
-
----
 
 ## Installation
 
