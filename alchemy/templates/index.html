@@ -20,7 +20,7 @@ All Articles
     <div class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</div>
     <div><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
     {% if article.authors and ARTICLE_AUTHORS %}
-    <div>By
+    <div>
       {% for author in article.authors %}
       <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
       {% endfor %}

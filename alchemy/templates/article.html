@@ -17,22 +17,30 @@
 <article class="article">
   <header>
     <ul class="list-inline">
-      <li class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</li>
-      <li>&middot;</li>
-      <li><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></li>
-      {% if article.authors and ARTICLE_AUTHORS %}
-      <li>&middot;</li>
-      <li>By
-        {% for author in article.authors %}
-        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
-        {% endfor %}
+      <li class="text-muted" title="{{ article.date.isoformat() }}">
+        <i class="fa fa-fw fa-clock-o"></i>
+        {{ article.locale_date }}
       </li>
-      {% endif %}
+      <li>&middot;</li>
+      <li>
+        <i class="fa fa-fw fa-folder-open"></i>
+        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+      </li>
       {% if article.tags %}
       <li>&middot;</li>
       <li>
+        <i class="fa fa-fw fa-tags"></i>
         {% for tag in article.tags %}
         <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </li>
+      {% endif %}
+      {% if article.authors and ARTICLE_AUTHORS %}
+      <li>&middot;</li>
+      <li>
+        <i class="fa fa-fw fa-users"></i>
+        {% for author in article.authors %}
+        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
       </li>
       {% endif %}
