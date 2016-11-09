@@ -16,9 +16,13 @@ All Articles
 {% block content %}
 {% for article in articles_page.object_list %}
 <article class="row teaser">
-  <header class="col-sm-4 hidden-xs">
-    <div class="text-muted" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</div>
-    <div><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
+  <header class="col-sm-4 hidden-xs text-right text-muted">
+    <div title="{{ article.date.isoformat() }}">
+      {{ article.locale_date }}
+    </div>
+    <div>
+      <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+    </div>
     {% if article.authors and ARTICLE_AUTHORS %}
     <div>
       {% for author in article.authors %}
@@ -28,7 +32,7 @@ All Articles
     {% endif %}
   </header>
   <div class="col-sm-8">
-    <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
     {{ article.summary }}
   </div>
 </article>
