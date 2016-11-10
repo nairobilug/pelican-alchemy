@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Merriweather'), local('Merriweather-Regular'),
+       url('../fonts/merriweather-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merriweather-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather-v13-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat-Regular'),
+       url('../fonts/montserrat-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v7-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* ------------------------------------------------------------------------- */
+
 ::selection {
   background: #0085A1;
   color: #fff;
@@ -6,9 +34,9 @@
 
 body {
   background-color: #f5f5f5;
-  font-family: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+  font-family: Merriweather, Georgia, serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 h1,
@@ -17,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
   font-weight: bold;
 }
 
@@ -78,6 +106,7 @@ blockquote {
 }
 
 .header ul {
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
   margin-bottom: 10px;
 }
 
