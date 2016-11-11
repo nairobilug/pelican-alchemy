@@ -21,13 +21,11 @@
         <i class="fa fa-fw fa-clock-o"></i>
         {{ article.locale_date }}
       </li>
-      <li>&middot;</li>
       <li>
         <i class="fa fa-fw fa-folder-open"></i>
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       </li>
       {% if article.tags %}
-      <li>&middot;</li>
       <li>
         <i class="fa fa-fw fa-tags"></i>
         {% for tag in article.tags %}
@@ -36,7 +34,6 @@
       </li>
       {% endif %}
       {% if article.authors and ARTICLE_AUTHORS %}
-      <li>&middot;</li>
       <li>
         <i class="fa fa-fw fa-users"></i>
         {% for author in article.authors %}

@@ -27,7 +27,7 @@
 /* ------------------------------------------------------------------------- */
 
 ::selection {
-  background: #0085A1;
+  background: #0085a1;
   color: #fff;
   text-shadow: none;
 }
@@ -36,7 +36,7 @@ body {
   background-color: #f5f5f5;
   font-family: Merriweather, Georgia, serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 h1,
