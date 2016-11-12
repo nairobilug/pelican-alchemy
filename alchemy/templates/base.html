@@ -69,41 +69,29 @@
         {% endif %}
         <div class="col-sm-{% if SITEIMAGE %}8{% else %}12{% endif %}">
           <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+          {% if SITESUBTITLE %}
           <p>{{ SITESUBTITLE }}</p>
-          {% if LINKS or PAGES or FACEBOOK_URL or FEED_ALL_ATOM or GITHUB_URL or G_PLUS_URL or TWITTER_URL %}
+          {% endif %}
+          {% if LINKS or (DISPLAY_PAGES_ON_MENU and PAGES) or ICONS %}
           <hr>
           <ul class="list-inline">
-            {% if LINKS %}
             {% for title, link in LINKS %}
             <li><a href="{{ link }}" target="_blank">{{ title }}</a></li>
             {% endfor %}
-            {% endif %}
-            {% for p in PAGES %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+            {% for page in PAGES %}
             {% if LINKS and loop.first %}
             <li class="text-muted">|</li>
             {% endif %}
-            <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
-            {% if FACEBOOK_URL or FEED_ALL_ATOM or GITHUB_URL or G_PLUS_URL or TWITTER_URL %}
-            {% if LINKS or PAGES %}
+            {% endif %}
+            {% for icon, link in ICONS %}
+            {% if (LINKS or (DISPLAY_PAGES_ON_MENU and PAGES)) and loop.first %}
             <li class="text-muted">|</li>
             {% endif %}
-            {% endif %}
-            {% if FACEBOOK_URL %}
-            <li><a class="fa fa-fw fa-lg fa-facebook" href="{{ FACEBOOK_URL }}" target="_blank"></a></li>
-            {% endif %}
-            {% if FEED_ALL_ATOM %}
-            <li><a class="fa fa-fw fa-lg fa-feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" target="_blank"></a></li>
-            {% endif %}
-            {% if GITHUB_URL %}
-            <li><a class="fa fa-fw fa-lg fa-github" href="{{ GITHUB_URL }}" target="_blank"></a></li>
-            {% endif %}
-            {% if G_PLUS_URL %}
-            <li><a class="fa fa-fw fa-lg fa-google-plus" href="{{ G_PLUS_URL }}" target="_blank"></a></li>
-            {% endif %}
-            {% if TWITTER_URL %}
-            <li><a class="fa fa-fw fa-lg fa-twitter" href="{{ TWITTER_URL }}" target="_blank"></a></li>
-            {% endif %}
+            <li><a class="fa fa-fw fa-lg fa-{{ icon }}" href="{{ link }}" target="_blank"></a></li>
+            {% endfor %}
           </ul>
           {% endif %}
         </div>
