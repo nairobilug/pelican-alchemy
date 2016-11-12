@@ -113,7 +113,7 @@
       <div class="row">
         <div class="col-sm-6">
           <nav class="list-inline">
-            {% if ARTICLE_AUTHORS %}
+            {% if not HIDE_AUTHORS %}
             <li><a href="{{ SITEURL }}/authors.html">Authors</a></li>
             {% endif %}
             <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>

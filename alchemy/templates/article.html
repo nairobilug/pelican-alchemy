@@ -33,7 +33,7 @@
         {% endfor %}
       </li>
       {% endif %}
-      {% if article.authors and ARTICLE_AUTHORS %}
+      {% if not HIDE_AUTHORS and article.authors %}
       <li>
         <i class="fa fa-fw fa-users"></i>
         {% for author in article.authors %}

@@ -23,7 +23,7 @@ All Articles
     <div>
       <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
     </div>
-    {% if article.authors and ARTICLE_AUTHORS %}
+    {% if not HIDE_AUTHORS and article.authors %}
     <div>
       {% for author in article.authors %}
       <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
