@@ -33,7 +33,7 @@ All Articles
   </header>
   <div class="col-sm-8">
     <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-    {{ article.summary }}
+    {{ article.summary|striptags }}
   </div>
 </article>
 {% if not loop.last %}
