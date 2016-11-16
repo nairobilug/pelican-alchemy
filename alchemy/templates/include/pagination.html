@@ -1,4 +1,4 @@
-{% if DEFAULT_PAGINATION %}
+{% if articles_paginator.num_pages > 1 %}
 <hr>
 <ul class="pagination">
   {% if articles_page.has_previous() %}
