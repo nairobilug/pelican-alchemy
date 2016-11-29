@@ -18,7 +18,7 @@ All Articles
 {% block content %}
 {% for article in articles_page.object_list %}
 <article class="row teaser">
-  <header class="col-sm-4 hidden-xs text-right text-muted">
+  <header class="col-sm-4 hidden-xs text-muted">
     <div title="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </div>
@@ -34,7 +34,7 @@ All Articles
     {% endif %}
   </header>
   <div class="col-sm-8">
-    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+    <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
     {{ article.summary|striptags }}
   </div>
 </article>
