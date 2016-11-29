@@ -64,7 +64,7 @@
       <div class="row">
         {% if SITEIMAGE %}
         <div class="col-sm-4 hidden-xs">
-          <a href="{{ SITEURL }}"><img class="img-responsive" src={{ SITEIMAGE }}></a>
+          <a href="{{ SITEURL }}"><img class="img-responsive" src={{ SITEURL }}{{ SITEIMAGE }}></a>
         </div>
         {% endif %}
         <div class="col-sm-{% if SITEIMAGE %}8{% else %}12{% endif %}">
