@@ -1,3 +1,3 @@
 # alchemy-preview
 
-[Alchemy](https://github.com/rwanyoike/pelican-alchemy) theme preview site.
+[https://github.com/rwanyoike/pelican-alchemy](https://github.com/rwanyoike/pelican-alchemy)
