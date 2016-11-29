@@ -1,0 +1,3 @@
+[submodule "plugins/bootstrapify"]
+	path = plugins/bootstrapify
+	url = https://github.com/ingwinlu/pelican-bootstrapify
