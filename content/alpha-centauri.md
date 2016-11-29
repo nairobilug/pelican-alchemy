@@ -1,19 +1,16 @@
-Title: Example Article
-Date: 2016-11-12 10:00
+Title: (Example Article) ✹ Alpha Centauri
+Date: 2016-11-13 09:00
 Category: Planetary Stuff
 Tags: stars, planets, g-type
 Slug: alpha-centauri
 
-Alpha Centauri (α Cen) is the closest star system to the Solar System at a distance of 4.37 light-years (1.34 pc). It consists of three stars: the pair Alpha Centauri A and Alpha Centauri B and a small and faint red dwarf, Proxima Centauri, that may be gravitationally bound to the other two. To the unaided eye, the two main components appear as a single object of an apparent visual magnitude of −0.27, forming the brightest star in the southern constellation Centaurus and the third-brightest star in the night sky, outshone only by Sirius and Canopus.
+**Alpha Centauri** (**α Centauri**, abbreviated **Alpha Cen**, **α Cen**) is the [closest](https://en.wikipedia.org/wiki/List_of_nearest_stars_and_brown_dwarfs "List of nearest stars and brown dwarfs") [star system](https://en.wikipedia.org/wiki/Star_system "Star system") to the [Solar System](https://en.wikipedia.org/wiki/Solar_System "Solar System") at a distance of 4.37 [light-years](https://en.wikipedia.org/wiki/Light-year "Light-year") (1.34 [pc](https://en.wikipedia.org/wiki/Parsec "Parsec")). It consists of three stars: the [pair](https://en.wikipedia.org/wiki/Binary_star "Binary star") **Alpha Centauri A** (also named **Rigil Kentaurus**) and **Alpha Centauri B** together with a small and faint [red dwarf](https://en.wikipedia.org/wiki/Red_dwarf "Red dwarf"), **Alpha Centauri C** (also named **[Proxima Centauri](https://en.wikipedia.org/wiki/Proxima_Centauri "Proxima Centauri")**), that may be gravitationally bound to the other two. To the unaided eye, the two main components appear as a single point of light with an apparent [visual magnitude](https://en.wikipedia.org/wiki/Visual_magnitude "Visual magnitude") of −0.27, forming the brightest [star](https://en.wikipedia.org/wiki/Star "Star") in the southern [constellation](https://en.wikipedia.org/wiki/Constellation "Constellation") of [Centaurus](https://en.wikipedia.org/wiki/Centaurus "Centaurus") and the [third-brightest](https://en.wikipedia.org/wiki/List_of_brightest_stars "List of brightest stars") star in the night sky, outshone only by [Sirius](https://en.wikipedia.org/wiki/Sirius "Sirius") and [Canopus](https://en.wikipedia.org/wiki/Canopus "Canopus").
 
 ![Alpha Centauri]({filename}/images/alpha-centauri.jpg "Alpha Centauri")
 
-Source: [https://en.wikipedia.org/wiki/Alpha_Centauri](https://en.wikipedia.org/wiki/Alpha_Centauri)
+Alpha Centauri A (α Cen A) has 110 percent of the mass and 151.9 percent of the luminosity of the [Sun](/wiki/Sun "Sun"), and Alpha Centauri B (α Cen B) is smaller and cooler, at 90.7 percent of the Sun's mass and 44.5 percent of its visual luminosity. During the pair's 79.91-year orbit about a common centre, the distance between them varies from about that between [Pluto](/wiki/Pluto "Pluto") and the Sun to that between [Saturn](/wiki/Saturn "Saturn") and the Sun.
 
-## Lorem
+Proxima Centauri (α Cen C) is at the slightly smaller distance of 1.29 parsecs or 4.24 light years from the Sun, making it the closest star to the Sun, even though it is not visible to the naked eye. The separation of Proxima from Alpha Centauri AB is about 0.06 parsecs, 0.2 light years or 15,000 [astronomical units](/wiki/Astronomical_unit "Astronomical unit") (AU), equivalent to 500 times the size of [Neptune](/wiki/Neptune "Neptune")'s orbit. [Proxima b](/wiki/Proxima_b "Proxima b"), an [Earth-sized](/wiki/Terrestrial_planet "Terrestrial planet") [exoplanet](/wiki/Exoplanet "Exoplanet") in the [habitable zone](/wiki/Habitable_zone "Habitable zone") of Proxima Centauri, has been detected and may be a destination of future interstellar spacecraft, including a fleet of _[StarChip](/wiki/StarChip_(spacecraft) "StarChip (spacecraft)")_ spacecraft currently being developed for a flyby mission by the [Breakthrough Starshot](/wiki/Breakthrough_Starshot "Breakthrough Starshot") project.
 
-Amet perspiciatis porro eaque quod perspiciatis dolores laboriosam sit. Aspernatur aspernatur ab maxime necessitatibus sit. Blanditiis eius recusandae quaerat hic cumque consequatur illum? Quaerat accusantium officia ratione commodi incidunt. Dolor.
+    Source: [https://en.wikipedia.org/wiki/Alpha_Centauri](https://en.wikipedia.org/wiki/Alpha_Centauri)
 
-Adipisicing molestiae amet nulla corporis error nostrum! Sint obcaecati ratione tenetur quam illo et ullam. Cum libero minus dolorem quod recusandae eius, aliquid nobis iusto, magnam modi? Culpa recusandae eligendi.
-
-Lorem enim id corrupti eos natus? Voluptatem consequatur non doloribus deleniti at consequatur. Eius veniam amet commodi doloremque perspiciatis maxime animi. Ratione suscipit cupiditate sint error laboriosam! Nobis rem ratione.

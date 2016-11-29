@@ -1,19 +1,13 @@
-Title: Example Article
-Date: 2016-11-12 09:58
+Title: (Example Article) ⊚ Solar System
+Date: 2016-11-12 09:00
 Category: Space Science
 Tags: planets, rings, universe
 Slug: solar-system
 
-The Solar System is the gravitationally bound system comprising the Sun and the objects that orbit it, either directly or indirectly. Of those objects that orbit the Sun directly, the largest eight are the planets, with the remainder being significantly smaller objects, such as dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly, the moons, two are larger than the smallest planet, Mercury.
+The **Solar System** is the [gravitationally](https://en.wikipedia.org/wiki/Gravity "Gravity") bound system comprising the [Sun](https://en.wikipedia.org/wiki/Sun "Sun") and the objects that orbit it, either directly or indirectly. Of those objects that orbit the Sun directly, the largest eight are the [planets](https://en.wikipedia.org/wiki/Planet "Planet"), with the remainder being significantly smaller objects, such as [dwarf planets](https://en.wikipedia.org/wiki/Dwarf_planet "Dwarf planet") and [small Solar System bodies](https://en.wikipedia.org/wiki/Small_Solar_System_body "Small Solar System body"). Of the objects that orbit the Sun indirectly, the [moons](https://en.wikipedia.org/wiki/Natural_satellite "Natural satellite"), two are larger than the smallest planet, [Mercury](https://en.wikipedia.org/wiki/Mercury_(planet) "Mercury (planet)").
 
 ![Solar System]({filename}/images/solar-system.jpg "Solar System")
 
-Source: [https://en.wikipedia.org/wiki/Solar_System](https://en.wikipedia.org/wiki/Solar_System)
+The Solar System [formed 4.6 billion years ago](https://en.wikipedia.org/wiki/Formation_and_evolution_of_the_Solar_System "Formation and evolution of the Solar System") from the [gravitational collapse](https://en.wikipedia.org/wiki/Gravitational_collapse "Gravitational collapse") of a giant interstellar [molecular cloud](https://en.wikipedia.org/wiki/Molecular_cloud "Molecular cloud"). The vast majority of the system's [mass](https://en.wikipedia.org/wiki/Mass "Mass") is in the Sun, with most of the remaining mass contained in [Jupiter](https://en.wikipedia.org/wiki/Jupiter "Jupiter"). The four smaller inner planets, [Mercury](https://en.wikipedia.org/wiki/Mercury_(planet) "Mercury (planet)"), [Venus](https://en.wikipedia.org/wiki/Venus "Venus"), [Earth](https://en.wikipedia.org/wiki/Earth "Earth") and [Mars](https://en.wikipedia.org/wiki/Mars "Mars"), are [terrestrial planets](https://en.wikipedia.org/wiki/Terrestrial_planet "Terrestrial planet"), being primarily composed of rock and metal. The four outer planets are [giant planets](https://en.wikipedia.org/wiki/Giant_planet "Giant planet"), being substantially more massive than the terrestrials. The two largest, Jupiter and [Saturn](https://en.wikipedia.org/wiki/Saturn "Saturn"), are [gas giants](https://en.wikipedia.org/wiki/Gas_giant "Gas giant"), being composed mainly of [hydrogen](https://en.wikipedia.org/wiki/Hydrogen "Hydrogen") and [helium](https://en.wikipedia.org/wiki/Helium "Helium"); the two outermost planets, [Uranus](https://en.wikipedia.org/wiki/Uranus "Uranus") and [Neptune](https://en.wikipedia.org/wiki/Neptune "Neptune"), are [ice giants](https://en.wikipedia.org/wiki/Ice_giant "Ice giant"), being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called [volatiles](https://en.wikipedia.org/wiki/Volatiles "Volatiles"), such as water, [ammonia](https://en.wikipedia.org/wiki/Ammonia "Ammonia") and [methane](https://en.wikipedia.org/wiki/Methane "Methane"). All planets have almost circular orbits that lie within a nearly flat disc called the [ecliptic](https://en.wikipedia.org/wiki/Ecliptic "Ecliptic").
 
-## Lorem
-
-Amet perspiciatis porro eaque quod perspiciatis dolores laboriosam sit. Aspernatur aspernatur ab maxime necessitatibus sit. Blanditiis eius recusandae quaerat hic cumque consequatur illum? Quaerat accusantium officia ratione commodi incidunt. Dolor.
-
-Adipisicing molestiae amet nulla corporis error nostrum! Sint obcaecati ratione tenetur quam illo et ullam. Cum libero minus dolorem quod recusandae eius, aliquid nobis iusto, magnam modi? Culpa recusandae eligendi.
-
-Lorem enim id corrupti eos natus? Voluptatem consequatur non doloribus deleniti at consequatur. Eius veniam amet commodi doloremque perspiciatis maxime animi. Ratione suscipit cupiditate sint error laboriosam! Nobis rem ratione.
+    Source: [https://en.wikipedia.org/wiki/Solar_System](https://en.wikipedia.org/wiki/Solar_System)
