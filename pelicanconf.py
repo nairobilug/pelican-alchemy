@@ -26,7 +26,7 @@ PLUGINS = ['bootstrapify']
 THEME = 'theme/alchemy'
 
 SITESUBTITLE = 'A magical \u2728 Pelican theme'
-SITEIMAGE = '/images/profile.png width=200 height=200'
+SITEIMAGE = '/images/profile.jpg width=200 height=200'
 DESCRIPTION = 'A functional, clean, responsive theme for Pelican. Heavily ' \
               'inspired by crowsfoot and clean-blog, powered by Bootstrap.'
 
