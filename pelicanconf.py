@@ -38,7 +38,7 @@ LINKS = (
 
 ICONS = (
     ('feed', '/feeds/all.atom.xml'),
-    ('github', 'https://github.com/nairobilug/pelican-alchemy'),
+    ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
 )
 
 # Default value is ['index', 'tags', 'categories', 'authors', 'archives']

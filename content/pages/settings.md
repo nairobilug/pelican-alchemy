@@ -41,7 +41,7 @@ A list of tuples (Icon, URL) for icon links:
 
     ICONS = (
         ('feed', '/feeds/all.atom.xml'),
-        ('github', 'https://github.com/nairobilug/pelican-alchemy'),
+        ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
     )
 
 A [Font Awesome icon](http://fontawesome.io/icons/) without the `fa-` prefix.

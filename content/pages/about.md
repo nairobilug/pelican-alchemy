@@ -1,8 +1,8 @@
 Title: About
 
-pelican-alchemy is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator. It is heavily inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), and is powered by [Bootstrap](https://github.com/twbs/bootstrap) (v3.x). It aims to put words on the internet without being too fancy about it.
+Alchemy is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator. It is heavily inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), and is powered by [Bootstrap](https://github.com/twbs/bootstrap) (v3.x).
 
-You can find the latest version of pelican-alchemy [here](https://github.com/nairobilug/pelican-alchemy) <i class="fa fa-github-alt"></i>.
+You can find the latest version of alchemy [here](https://github.com/rwanyoike/pelican-alchemy) <i class="fa fa-github-alt"></i>.
 
 ## Features
 
@@ -19,7 +19,7 @@ You can find the latest version of pelican-alchemy [here](https://github.com/nai
 
 ## Fonts
 
-pelican-alchemy ships with 2 [Google Fonts](https://fonts.google.com).
+Alchemy ships with 2 [Google Fonts](https://fonts.google.com).
 
 [Montserrat](https://fonts.google.com/specimen/Montserrat) and [Merriweather](https://fonts.google.com/specimen/Merriweather):
 
