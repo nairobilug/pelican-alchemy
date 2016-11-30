@@ -1,3 +1,3 @@
 # pelican-alchemy
 
-Demo Branch!
+Demo branch!
