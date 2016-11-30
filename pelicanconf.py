@@ -42,7 +42,8 @@ LINKS = (
 )
 
 ICONS = (
-    ('feed', '/feeds/all.atom.xml'),
+    # Note feed has it's domain hard-coded (cheap workaround)
+    ('feed', 'https://rwanyoike.github.io/pelican-alchemy/feeds/all.atom.xml'),
     ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
 )
 
