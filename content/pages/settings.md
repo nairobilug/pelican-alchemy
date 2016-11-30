@@ -105,5 +105,3 @@ Use a [realfavicongenerator](https://realfavicongenerator.net/blog/new-favicon-p
     PIWIK_URL = '...'
     PIWIK_SITE_ID = '...'
 
-An RSS icon will also appear on header if `FEED_ALL_ATOM` is set.
-
