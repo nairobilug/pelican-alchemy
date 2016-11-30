@@ -23,7 +23,7 @@ PLUGINS = ['bootstrapify']
 
 # Theme settings --------------------------------------------------------------
 
-THEME = 'theme/alchemy'
+THEME = 'themes/pelican-alchemy/alchemy'
 
 SITESUBTITLE = 'A magical \u2728 Pelican theme'
 SITEIMAGE = '/images/profile.jpg width=200 height=200'
