@@ -1,3 +1,3 @@
-# alchemy-preview
+# pelican-alchemy
 
-[https://github.com/rwanyoike/pelican-alchemy](https://github.com/rwanyoike/pelican-alchemy)
+Demo Branch!
