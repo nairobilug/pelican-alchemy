@@ -41,11 +41,9 @@ LINKS = (
     ('Jinja2', 'http://jinja.pocoo.org/'),
 )
 
-ICONS = (
-    # Note feed has it's domain hard-coded (cheap workaround)
-    ('feed', 'https://rwanyoike.github.io/pelican-alchemy/feeds/all.atom.xml'),
+ICONS = [
     ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
-)
+]
 
 # Default value is ['index', 'tags', 'categories', 'authors', 'archives']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'sitemap']
