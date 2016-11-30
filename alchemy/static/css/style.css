@@ -4,17 +4,22 @@
   text-shadow: none;
 }
 
-body {
-  background-color: #f5f5f5;
-}
-
 a {
   color: #333;
 }
 
 a:focus,
 a:hover {
-  color: #0085a1
+  color: #0085a1;
+}
+
+blockquote {
+  color: #818a91;
+  font-style: italic;
+}
+
+hr {
+  margin: 1.5rem 0;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -23,9 +28,14 @@ a:hover {
   max-width: 960px;
 }
 
+.header,
+.footer {
+  background-color: #f5f5f5;
+  padding: 1.5rem 0 .5rem;
+}
+
 .header {
   border-bottom: 1px solid rgba(0,0,0,.1);
-  padding-top: 1rem;
 }
 
 .header img {
@@ -33,7 +43,6 @@ a:hover {
 }
 
 .header .title {
-  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -50,13 +59,11 @@ a:hover {
 }
 
 .main {
-  background-color: #fff;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .footer {
   border-top: 1px solid rgba(0,0,0,.1);
-  padding-top: 1rem;
 }
 
 .highlight pre {
@@ -86,12 +93,23 @@ a:hover {
   margin-bottom: .5rem;
 }
 
-.article .content p {
-  margin: 1.5rem 0;
+.article header li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .article .content a {
   text-decoration: underline
+}
+
+/* Pad article content */
+.article .content p {
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 576px) {
+  .header .title {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -105,6 +123,6 @@ a:hover {
   }
 
   .teaser header li:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
