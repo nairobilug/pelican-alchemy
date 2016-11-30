@@ -18,6 +18,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+ARTICLE_URL = 'posts/{slug}.html'
+ARTICLE_SAVE_AS = ARTICLE_URL
+ARTICLE_LANG_URL = 'posts/{slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL
+
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['bootstrapify']
 
