@@ -24,11 +24,13 @@ All Articles
         <i class="fa fa-clock-o"></i>
         {{ article.locale_date }}
       </li>
+      <li class="list-inline-item hidden-sm-up text-muted">&middot;</li>
       <li>
         <i class="fa fa-folder-open-o"></i>
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       </li>
       {% if not HIDE_AUTHORS and article.authors %}
+      <li class="list-inline-item hidden-sm-up text-muted">&middot;</li>
       <li>
         <i class="fa fa-user-o"></i>
         {% for author in article.authors %}

@@ -9,10 +9,10 @@ Archives
 {% endblock %}
 
 {% block content %}
-<dl class="dl-horizontal">
+<dl class="row">
   {% for article in dates %}
-  <dt>{{ article.locale_date }}</dt>
-  <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+  <dt class="col-sm-4">{{ article.locale_date }}</dt>
+  <dd class="col-sm-8"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
   {% endfor %}
 </dl>
 {% endblock %}
