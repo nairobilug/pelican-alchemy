@@ -24,7 +24,7 @@ ARTICLE_LANG_URL = 'posts/{slug}-{lang}.html'
 ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['bootstrapify']
+PLUGINS = ['pelican-bootstrapify']
 
 BOOTSTRAPIFY = {
     'table': ['table', 'table-striped', 'table-hover'],
