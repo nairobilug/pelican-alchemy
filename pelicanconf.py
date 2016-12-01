@@ -26,6 +26,12 @@ ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['bootstrapify']
 
+BOOTSTRAPIFY = {
+    'table': ['table', 'table-striped', 'table-hover'],
+    'img': ['img-fluid'],
+    'blockquote': ['blockquote'],
+}
+
 # Theme settings --------------------------------------------------------------
 
 THEME = 'themes/pelican-alchemy/alchemy'
@@ -48,3 +54,5 @@ ICONS = [
 # Default value is ['index', 'tags', 'categories', 'authors', 'archives']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'sitemap']
 SITEMAP_SAVE_AS = 'sitemap.xml'
+
+PYGMENTS_STYLE = 'monokai'
