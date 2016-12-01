@@ -23,6 +23,8 @@ ARTICLE_SAVE_AS = ARTICLE_URL
 ARTICLE_LANG_URL = 'posts/{slug}-{lang}.html'
 ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL
 
+DEFAULT_PAGINATION = 10
+
 STATIC_PATHS = ['extras', 'images']
 EXTRA_PATH_METADATA = {
     'extras/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
@@ -65,9 +67,9 @@ ICONS = [
     ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
 ]
 
+PYGMENTS_STYLE = 'monokai'
+RFG_FAVICONS = True
+
 # Default value is ['index', 'tags', 'categories', 'authors', 'archives']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'sitemap']
 SITEMAP_SAVE_AS = 'sitemap.xml'
-
-RFG_FAVICONS = True
-PYGMENTS_STYLE = 'monokai'

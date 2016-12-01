@@ -2,13 +2,13 @@ Title: Settings
 
 Unless otherwise specified, settings that refer to paths can be either absolute or relative to the configuration file.
 
-#### SITESUBTITLE
+##### SITESUBTITLE
 
 Subtitle that appears in the header:
 
     SITESUBTITLE = 'A magical \u2728 Pelican theme'
 
-#### SITEIMAGE
+##### SITEIMAGE
 
 Image that appears in the header:
 
@@ -18,14 +18,14 @@ You can also force the image size:
 
     SITEIMAGE = '/images/profile.svg width=200 height=200'
 
-#### DESCRIPTION
+##### DESCRIPTION
 
-Index `<meta name="description" content="...">`:
+Index HTML head `<meta>` description:
 
     DESCRIPTION = 'A functional, clean, responsive theme for Pelican. Heavily ' \
                   'inspired by crowsfoot and clean-blog, powered by Bootstrap.'
 
-#### LINKS
+##### LINKS
 
 A list of tuples (Title, URL) for menu links:
 
@@ -35,18 +35,17 @@ A list of tuples (Title, URL) for menu links:
         ('Jinja2', 'http://jinja.pocoo.org/'),
     )
 
-#### ICONS
+##### ICONS
 
 A list of tuples (Icon, URL) for icon links:
 
     ICONS = (
-        ('feed', '/feeds/all.atom.xml'),
         ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
     )
 
-A [Font Awesome icon](http://fontawesome.io/icons/) without the `fa-` prefix.
+Icon in (Icon, URL) is a Font Awesome [icon](http://fontawesome.io/icons/) without the `fa-` prefix.
 
-#### PYGMENTS_STYLE
+##### PYGMENTS_STYLE
 
 You can choose one of the built-in Pygments styles for syntax highlighting.
 
@@ -83,21 +82,21 @@ The following styles are available:
 - vs
 - xcode
 
-For a demo of the different styles, click [here](http://pygments.org/demo/).
+For a demo of the different styles, see [link](http://pygments.org/demo/).
 
-#### HIDE_AUTHORS
+##### HIDE_AUTHORS
 
 Hide the author(s) of an article - useful for single author sites:
 
     HIDE_AUTHORS = True
 
-#### NEW_FAVICONS
+##### NEW_FAVICONS
 
 Use a [realfavicongenerator](https://realfavicongenerator.net/blog/new-favicon-package-less-is-more/) favicon package:
 
     RFG_FAVICONS = True
 
-#### Other Settings
+---
 
     DISQUS_SITENAME = '...'
     GAUGES = '...'

@@ -1,8 +1,9 @@
-Title: (Example Article) ⊚ Solar System
+Title: Solar System
 Date: 2016-11-12 09:00
 Category: Space Science
 Tags: planets, rings, universe
 Slug: solar-system
+Summary: The Solar System is the gravitationally bound system comprising the Sun and the objects that orbit it, either directly or indirectly. Of those objects that orbit the Sun directly, the largest eight are the planets, with the remainder being significantly smaller objects such as dwarf planets and small Solar System bodies.
 
 The **Solar System** is the [gravitationally](https://en.wikipedia.org/wiki/Gravity "Gravity") bound system comprising the [Sun](https://en.wikipedia.org/wiki/Sun "Sun") and the objects that orbit it, either directly or indirectly. Of those objects that orbit the Sun directly, the largest eight are the [planets](https://en.wikipedia.org/wiki/Planet "Planet"), with the remainder being significantly smaller objects, such as [dwarf planets](https://en.wikipedia.org/wiki/Dwarf_planet "Dwarf planet") and [small Solar System bodies](https://en.wikipedia.org/wiki/Small_Solar_System_body "Small Solar System body"). Of the objects that orbit the Sun indirectly, the [moons](https://en.wikipedia.org/wiki/Natural_satellite "Natural satellite"), two are larger than the smallest planet, [Mercury](https://en.wikipedia.org/wiki/Mercury_(planet) "Mercury (planet)").
 
