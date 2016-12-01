@@ -95,7 +95,7 @@ Hide the author(s) of an article - useful for single author sites:
 
 Use a [realfavicongenerator](https://realfavicongenerator.net/blog/new-favicon-package-less-is-more/) favicon package:
 
-    NEW_FAVICONS = True
+    RFG_FAVICONS = True
 
 #### Other Settings
 
