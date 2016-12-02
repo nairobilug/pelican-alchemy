@@ -2,7 +2,7 @@
 
 Alchemy ✨ is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator. It is heavily inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot), [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), and powered by [Bootstrap](https://github.com/twbs/bootstrap).
 
-[Demo](https://rwanyoike.github.io/pelican-alchemy/)!
+[Demo](https://nairobilug.github.io/pelican-alchemy/)!
 
 Pull requests are welcome!
 
@@ -27,7 +27,7 @@ Pull requests are welcome!
 
 First, clone the repo:
 
-    $ git clone git@github.com:rwanyoike/pelican-alchemy.git
+    $ git clone git@github.com:nairobilug/pelican-alchemy.git
 
 Then point the `THEME` variable in your Pelican config to the `alchemy` folder:
 
@@ -38,7 +38,7 @@ Then point the `THEME` variable in your Pelican config to the `alchemy` folder:
 In your Pelican site:
 
     $ mkdir themes
-    $ git submodule add https://github.com/rwanyoike/pelican-alchemy themes/pelican-alchemy
+    $ git submodule add https://github.com/nairobilug/pelican-alchemy themes/pelican-alchemy
 
 And Pelican config:
 
@@ -46,7 +46,7 @@ And Pelican config:
 
 ## Settings
 
-Visit the [settings page](https://rwanyoike.github.io/pelican-alchemy/pages/settings.html) for examples:
+Visit the [settings page](https://nairobilug.github.io/pelican-alchemy/pages/settings.html) for examples:
 
 - **SITESUBTITLE**: Subtitle that appears in the header.
 - **SITEIMAGE**: Image that appears in the header.
@@ -65,7 +65,7 @@ Others:
 - **PIWIK_URL**
 - **PIWIK_SITE_ID**
 
-Example Pelican [config](https://github.com/rwanyoike/pelican-alchemy/blob/demo/pelicanconf.py) (demo site).
+Example Pelican [config](https://github.com/nairobilug/pelican-alchemy/blob/demo/pelicanconf.py) (demo site).
 
 ## Tips
 
