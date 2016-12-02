@@ -40,7 +40,7 @@ A list of tuples (Title, URL) for menu links:
 A list of tuples (Icon, URL) for icon links:
 
     ICONS = (
-        ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
+        ('github', 'https://github.com/nairobilug/pelican-alchemy'),
     )
 
 Icon in (Icon, URL) is a Font Awesome [icon](http://fontawesome.io/icons/) without the `fa-` prefix.

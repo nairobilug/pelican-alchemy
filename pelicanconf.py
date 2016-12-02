@@ -64,7 +64,7 @@ LINKS = (
 )
 
 ICONS = [
-    ('github', 'https://github.com/rwanyoike/pelican-alchemy'),
+    ('github', 'https://github.com/nairobilug/pelican-alchemy'),
 ]
 
 PYGMENTS_STYLE = 'monokai'
