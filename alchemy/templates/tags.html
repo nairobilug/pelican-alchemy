@@ -1,14 +1,20 @@
 {% extends "base.html" %}
 
 {% block title %}
-  {{ SITENAME }} &mdash; Tags
+Tags {{ super() }}
+{% endblock %}
+
+{% block page_header %}
+Tags
 {% endblock %}
 
 {% block content %}
-  <h1>Tags on {{ SITENAME }}</h1>
-  <ul class="list-unstyled">
-    {% for tag, articles in tags|sort %}
-      <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
-    {% endfor %}
-  </ul>
+<table class="table table-bordered table-striped table-hover">
+  {% for tag, articles in tags|sort %}
+  <tr>
+    <td><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a></td>
+    <td>{{ articles|count }}</td>
+  </tr>
+  {% endfor %}
+</table>
 {% endblock %}

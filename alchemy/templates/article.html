@@ -1,56 +1,51 @@
 {% extends "base.html" %}
 
 {% block head %}
-  {{ super() }}
-  {% if article.author %}
-    <meta name="author" content="{{ article.author }}">
-  {% endif %}
-  {% if article.summary %}
-    <meta name="description" content="{{ article.summary|striptags }}">
-  {% endif %}
-  <meta name="tags" contents="{% for tag in article.tags %}{{ tag }}, {% endfor %}">
+{{ super() }}
+<meta name="description" content="{{ article.summary|striptags }}">
 {% endblock %}
 
 {% block title %}
-  {{ SITENAME }} &mdash; {{ article.title|striptags }}
+{{ article.title|striptags }} {{ super() }}
+{% endblock %}
+
+{% block page_header %}
+{{ article.title }}
 {% endblock %}
 
 {% block content %}
-  <div class="post full-post">
-    <h1 class="post-title">
-      <a href="/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-    </h1>
+<article class="article">
+  <header>
     <ul class="list-inline">
-      <li class="post-date">
-        <a class="text-muted" href="/{{ article.url }}" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</a>
+      <li class="list-inline-item text-muted" title="{{ article.date.isoformat() }}">
+        <i class="fa fa-clock-o"></i>
+        {{ article.locale_date }}
       </li>
-      <li class="muted">&middot;</li>
-      <li class="post-category">
+      <li class="list-inline-item">
+        <i class="fa fa-folder-open-o"></i>
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       </li>
-      {% if article.tags %}
-        <li class="muted">&middot;</li>
-        <li>
-          {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-          {% endfor %}
-        </li>
+      {% if not HIDE_AUTHORS and article.authors %}
+      <li class="list-inline-item">
+        <i class="fa fa-user-o"></i>
+        {% for author in article.authors %}
+        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </li>
       {% endif %}
-      {% if article.author and SHOW_ARTICLE_AUTHOR %}
-        <li class="muted">&middot;</li>
-        <li>
-          <address class="post-author">
-            By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-          </address>
-        </li>
+      {% if article.tags %}
+      <li class="list-inline-item">
+        <i class="fa fa-files-o"></i>
+        {% for tag in article.tags %}
+        <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </li>
       {% endif %}
     </ul>
-    <div class="post-content">
-      {{ article.content }}
-    </div>
+  </header>
+  <div class="content">
+    {{ article.content }}
   </div>
-  <hr class="separator">
-  <div class="col-md-8 col-md-offset-2">
-    {% include 'include/disqus_comments.html' %}
-  </div>
+</article>
+{% include 'include/comments.html' %}
 {% endblock %}
