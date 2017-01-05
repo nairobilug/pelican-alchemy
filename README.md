@@ -2,7 +2,7 @@
 
 Alchemy ✨ is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator. It is heavily inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot), [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), and powered by [Bootstrap](https://github.com/twbs/bootstrap). Pull requests are welcome!
 
-[Demo](https://nairobilug.github.io/pelican-alchemy/)!
+[Demo website](https://nairobilug.github.io/pelican-alchemy/)!
 
 ## Screenshot
 
