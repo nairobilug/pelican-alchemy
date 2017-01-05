@@ -31,7 +31,7 @@ Then point the `THEME` variable in your Pelican config to the `alchemy` folder:
 
     THEME = '/path/to/pelican-alchemy/alchemy'
 
-### As a Submodule
+### As a submodule
 
 In your Pelican site:
 
@@ -67,7 +67,7 @@ Example Pelican [config](https://github.com/nairobilug/pelican-alchemy/blob/demo
 
 ## Tips
 
-### Bootstrap Classes
+### Bootstrap classes
 
 To have Bootstrap classes set for rendered html (`.table`, `.img-fluid` etc), use the [Bootstrapify](https://github.com/ingwinlu/pelican-bootstrapify) plugin.
 
