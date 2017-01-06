@@ -68,13 +68,13 @@
           {% if SITESUBTITLE %}
           <p class="text-muted">{{ SITESUBTITLE }}</p>
           {% endif %}
-          {% if LINKS or (DISPLAY_PAGES_ON_MENU and PAGES) or ICONS %}
+          {% if LINKS or (DISPLAY_PAGES_ON_MENU and pages) or ICONS %}
           <ul class="list-inline">
             {% for title, link in LINKS %}
             <li class="list-inline-item"><a href="{{ link }}" target="_blank">{{ title }}</a></li>
             {% endfor %}
             {% if DISPLAY_PAGES_ON_MENU %}
-            {% for page in PAGES %}
+            {% for page in pages %}
             {% if LINKS and loop.first %}
             <li class="list-inline-item text-muted">|</li>
             {% endif %}
@@ -82,7 +82,7 @@
             {% endfor %}
             {% endif %}
             {% for icon, link in ICONS %}
-            {% if (LINKS or (DISPLAY_PAGES_ON_MENU and PAGES)) and loop.first %}
+            {% if (LINKS or (DISPLAY_PAGES_ON_MENU and pages)) and loop.first %}
             <li class=" list-inline-item text-muted">|</li>
             {% endif %}
             <li class="list-inline-item"><a class="fa fa-{{ icon }}" href="{{ link }}" target="_blank"></a></li>
