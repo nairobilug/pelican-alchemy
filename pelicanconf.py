@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Alchemy'
-SITENAME = 'pelican-alchemy'
+SITENAME = 'Pelican Alchemy'
 SITEURL = ''  # Intentionally left blank, see ./publishconf.py
 
 PATH = 'content'
@@ -54,8 +54,8 @@ THEME = 'themes/pelican-alchemy/alchemy'
 
 SITESUBTITLE = 'A magical \u2728 Pelican theme'
 SITEIMAGE = '/images/profile.jpg width=200 height=200'
-DESCRIPTION = 'A functional, clean, responsive theme for Pelican. Heavily ' \
-              'inspired by crowsfoot and clean-blog, powered by Bootstrap.'
+DESCRIPTION = 'A functional, clean, responsive theme for Pelican. powered by' \
+              'Bootstrap.'
 
 LINKS = (
     ('Pelican', 'http://getpelican.com/'),
