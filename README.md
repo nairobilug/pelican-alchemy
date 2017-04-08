@@ -1,4 +1,4 @@
-# pelican-alchemy
+# Pelican Alchemy
 
 **Alchemy** ✨ is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator.
 
