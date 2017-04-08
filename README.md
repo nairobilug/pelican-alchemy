@@ -1,14 +1,10 @@
 # pelican-alchemy
 
-Alchemy ✨ is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator. Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
+**Alchemy** ✨ is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator.
 
-## Screenshot
+Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), it features:
 
-![Screenshot](screenshot.jpg "Screenshot")
-
-## Features
-
-- Powered by [Bootstap 4](http://v4-alpha.getbootstrap.com/)
+- Built with [Bootstap 4](http://v4-alpha.getbootstrap.com/) (v4-alpha)
 - [Favicon Generator](http://realfavicongenerator.net/) support
 - [Font Awesome](http://fontawesome.io/) icons
 - [Pygments](http://pygments.org/) syntax highlighting styles
@@ -16,28 +12,38 @@ Alchemy ✨ is a functional, clean, responsive theme for the [Pelican](http://ge
 - External analytics (Google Analytics, Gauges, Piwik)
 - External comments (Disqus)
 
+![Screenshot](screenshot.jpg "Screenshot")
+
 ## Installation
 
 Clone the repo:
 
-    $ git clone https://github.com/nairobilug/pelican-alchemy
+```shell
+$ git clone https://github.com/nairobilug/pelican-alchemy
+```
 
 Set the `THEME` variable in your Pelican config:
 
-    THEME = '/PATH_TO_REPO/alchemy'
+```python
+THEME = '/PATH_TO_REPO/alchemy'
+```
 
-### As a submodule
+### As a Submodule
 
 In your Pelican site:
 
-    $ mkdir themes
-    $ git submodule add https://github.com/nairobilug/pelican-alchemy themes/pelican-alchemy
+```shell
+$ mkdir themes
+$ git submodule add https://github.com/nairobilug/pelican-alchemy themes/pelican-alchemy
+```
 
-And Pelican config:
+And in Pelican config:
 
-    THEME = 'themes/pelican-alchemy/alchemy'
+```python
+THEME = 'themes/pelican-alchemy/alchemy'
+```
 
-## Settings
+## Usage
 
 Visit the [Settings wiki](https://github.com/nairobilug/pelican-alchemy/wiki/Settings) for examples:
 
@@ -60,6 +66,20 @@ Misc settings:
 
 Example [pelicanconf.py](https://github.com/nairobilug/pelican-alchemy/blob/demo/pelicanconf.py) (demo website).
 
-## Tips & Tricks
+### Tips & Tricks
 
 [https://github.com/nairobilug/pelican-alchemy/wiki/Tips](https://github.com/nairobilug/pelican-alchemy/wiki/Tips)
+
+## Maintainers
+
+- [@nairobilug](https://github.com/nairobilug)
+
+## Contribute
+
+Feel free to dive in. [Open an issue](https://github.com/nairobilug/pelican-alchemy/issues/new) or submit a PR.
+
+**Alchemy** follows the [Contributor Covenant](CODE_OF_CONDUCT.md) code of conduct.
+
+## License
+
+[MIT](LICENSE) © Nairobi GNU/Linux Users Group
