@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
 {% block title %}
-Categories {{ super() }}
+  Categories {{ super() }}
 {% endblock %}
 
 {% block page_header %}
-Categories
+  Categories
 {% endblock %}
 
 {% block content %}
-<table class="table table-bordered table-striped table-hover">
-  {% for category, articles in categories|sort %}
-  <tr>
-    <td><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></td>
-    <td>{{ articles|count }}</td>
-  </tr>
-  {% endfor %}
-</table>
+  <table class="table table-bordered table-striped">
+    {% for category, articles in categories|sort %}
+      <tr>
+        <td><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></td>
+        <td>{{ articles|count }}</td>
+      </tr>
+    {% endfor %}
+  </table>
 {% endblock %}

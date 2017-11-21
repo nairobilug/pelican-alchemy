@@ -1,24 +1,24 @@
 {% if articles_paginator.num_pages > 1 %}
-<hr>
-<ul class="pagination">
-  {% if articles_page.has_previous() %}
-  <li class="page-item">
-    <a class="page-link" href="{{ SITEURL }}/{{ articles_previous_page.url }}">
-      <span aria-hidden="true">&laquo;</span>
-      <span class="sr-only">Previous</span>
-    </a>
-  </li>
-  {% endif %}
-  <li class="page-item disabled">
-    <span class="page-link">{{ articles_page.number }} of {{ articles_paginator.num_pages }}</span>
-  </li>
-  {% if articles_page.has_next() %}
-  <li class="page-item">
-    <a class="page-link" href="{{ SITEURL }}/{{ articles_next_page.url }}">
-      <span aria-hidden="true">&raquo;</span>
-      <span class="sr-only">Next</span>
-    </a>
-  </li>
-  {% endif %}
-</ul>
+  <hr>
+  <ul class="pagination">
+    {% if articles_page.has_previous() %}
+      <li class="page-item">
+        <a class="page-link" href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+    {% endif %}
+    <li class="page-item disabled">
+      <span class="page-link">{{ articles_page.number }} of {{ articles_paginator.num_pages }}</span>
+    </li>
+    {% if articles_page.has_next() %}
+      <li class="page-item">
+        <a class="page-link" href="{{ SITEURL }}/{{ articles_next_page.url }}">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
 {% endif %}

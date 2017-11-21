@@ -1,53 +1,55 @@
 {% extends "base.html" %}
 
 {% block head %}
-{{ super() }}
-{% if DESCRIPTION %}
-<meta name="description" content="{{ DESCRIPTION|striptags }}">
-{% endif %}
+  {{ super() }}
+  {% if DESCRIPTION %}
+    <meta name="description" content="{{ DESCRIPTION|striptags }}">
+  {% endif %}
 {% endblock %}
 
 {% block title %}
-{{ SITENAME }} | {{ SITESUBTITLE }}
+  {{ SITENAME }} | {{ SITESUBTITLE }}
 {% endblock %}
 
 {% block page_header %}
-Articles
+  Articles
 {% endblock %}
 
 {% block content %}
-{% for article in articles_page.object_list %}
-<article class="row teaser">
-  <header class="col-sm-4 text-muted">
-    <ul>
-      <li title="{{ article.date.isoformat() }}">
-        <i class="fa fa-clock-o"></i>
-        {{ article.locale_date }}
-      </li>
-      <li>
-        <i class="fa fa-folder-open-o"></i>
-        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-      </li>
-      {% if not HIDE_AUTHORS and article.authors %}
-      <li>
-        <i class="fa fa-user-o"></i>
-        {% for author in article.authors %}
-        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
-        {% endfor %}
-      </li>
-      {% endif %}
-    </ul>
-  </header>
-  <div class="col-sm-8">
-    <h4 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
-    <div class="content">
-      {{ article.summary|striptags }}
-    </div>
-  </div>
-</article>
-{% if not loop.last %}
-<hr>
-{% endif %}
-{% endfor %}
-{% include 'include/pagination.html' %}
+  {% for article in articles_page.object_list %}
+    <article class="row teaser">
+      <header class="col-sm-4 text-muted">
+        <ul>
+          <li title="{{ article.date.isoformat() }}">
+            <i class="fa fa-clock-o"></i>
+            {{ article.locale_date }}
+          </li>
+          <li>
+            <i class="fa fa-folder-open-o"></i>
+            <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+          </li>
+          {% if not HIDE_AUTHORS and article.authors %}
+            <li>
+              <i class="fa fa-user-o"></i>
+              {% for author in article.authors %}
+                <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
+              {% endfor %}
+            </li>
+          {% endif %}
+        </ul>
+      </header>
+      <div class="col-sm-8">
+        <h4 class="title">
+          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </h4>
+        <div class="content">
+          {{ article.summary|striptags }}
+        </div>
+      </div>
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+  {% include 'include/pagination.html' %}
 {% endblock %}
