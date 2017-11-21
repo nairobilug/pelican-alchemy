@@ -17,7 +17,12 @@
     <meta name="theme-color" content="#333333">
   {% endif %}
 
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
+  {% if BOOTSWATCH_THEME %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootswatch/{{ BOOTSWATCH_THEME }}/bootstrap.min.css">
+  {% else %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/default.css">
+  {% endif %}
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('default') }}.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
@@ -34,6 +39,8 @@
     </div>
   </header>
 
+  <hr class="my-0">
+
   <div class="main">
     <div class="container">
       <h1>{% block page_header %}{% endblock %}</h1>
@@ -41,6 +48,8 @@
       {% block content %}{% endblock %}
     </div>
   </div>
+
+  <hr class="my-0">
 
   <footer class="footer">
     <div class="container">
