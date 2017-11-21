@@ -82,4 +82,4 @@ Feel free to dive in. [Open an issue](https://github.com/nairobilug/pelican-alch
 
 ## License
 
-[MIT](LICENSE) © Nairobi GNU/Linux Users Group
+[MIT](LICENSE) © 2017 Nairobi GNU/Linux Users Group
