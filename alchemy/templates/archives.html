@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 
 {% block title %}
-Archives {{ super() }}
+  Archives {{ super() }}
 {% endblock %}
 
 {% block page_header %}
-Archives
+  Archives
 {% endblock %}
 
 {% block content %}
-<dl class="row">
-  {% for article in dates %}
-  <dt class="col-sm-4">{{ article.locale_date }}</dt>
-  <dd class="col-sm-8"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-  {% endfor %}
-</dl>
+  <dl class="row">
+    {% for article in dates %}
+      <dt class="col-sm-4">{{ article.locale_date }}</dt>
+      <dd class="col-sm-8"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+    {% endfor %}
+  </dl>
 {% endblock %}

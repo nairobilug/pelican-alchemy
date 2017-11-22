@@ -1,0 +1,26 @@
+{% if FEED_ALL_ATOM %}
+  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
+        href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
+{% endif %}
+{% if FEED_ALL_RSS %}
+  <link rel="alternate" type="application/rss+xml" title="Full RSS Feed"
+        href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{% endif %}
+{% if FEED_ATOM %}
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed"
+        href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}">{% endif %}
+{% if FEED_RSS %}
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed"
+        href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}">{% endif %}
+{% if CATEGORY_FEED_ATOM and category %}
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}">{% endif %}
+{% if CATEGORY_FEED_RSS and category %}
+  <link rel="alternate" type="application/rss+xml" title="Categories RSS Feed"
+        href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}">{% endif %}
+{% if TAG_FEED_ATOM and tag %}
+  <link rel="alternate" type="application/atom+xml" title="Tags Atom Feed"
+        href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}">{% endif %}
+{% if TAG_FEED_RSS and tag %}
+  <link rel="alternate" type="application/rss+xml" title="Tags RSS Feed"
+        href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}">
+{% endif %}

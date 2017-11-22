@@ -1,40 +1,44 @@
 # Pelican Alchemy
 
-**Alchemy** ✨ is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator.
+> A magical ✨ Pelican theme
+
+Alchemy is a functional, clean, responsive theme for the [Pelican](http://getpelican.com) static site generator.
 
 Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), it features:
 
-- Built with [Bootstap 4](http://v4-alpha.getbootstrap.com/) (v4-alpha)
-- [Favicon Generator](http://realfavicongenerator.net/) support
+- Powered by [Bootstap 4](http://v4-alpha.getbootstrap.com/) (v4.0.0-beta.2)
 - [Font Awesome](http://fontawesome.io/) icons
 - [Pygments](http://pygments.org/) syntax highlighting styles
-- `sitemap.xml` support
-- External analytics (Google Analytics, Gauges, Piwik)
-- External comments (Disqus)
+- Pelican `sitemap.xml` support
+- [Favicon Generator](http://realfavicongenerator.net/) support
+- External analytics ([Google](https://analytics.google.com), [Gauges](https://gaug.es), [Piwik](https://piwik.org)) support **
+- External comments ([Disqus](https://disqus.com)) support **
 
-![Screenshot](screenshot.jpg "Screenshot")
+** Features link to external assets (webfonts etc).
+
+![](screenshot.jpg)
 
 ## Installation
 
 Clone the repo:
 
-```shell
-$ git clone https://github.com/nairobilug/pelican-alchemy
+```bash
+git clone https://github.com/nairobilug/pelican-alchemy
 ```
 
 Set the `THEME` variable in your Pelican config:
 
 ```python
-THEME = '/PATH_TO_REPO/alchemy'
+THEME = '<PATH_TO_REPO>/alchemy'
 ```
 
 ### As a Submodule
 
 In your Pelican site:
 
-```shell
-$ mkdir themes
-$ git submodule add https://github.com/nairobilug/pelican-alchemy themes/pelican-alchemy
+```bash
+mkdir themes
+git submodule add https://github.com/nairobilug/pelican-alchemy themes/pelican-alchemy
 ```
 
 And in Pelican config:
@@ -68,18 +72,16 @@ Example [pelicanconf.py](https://github.com/nairobilug/pelican-alchemy/blob/demo
 
 ### Tips & Tricks
 
-[https://github.com/nairobilug/pelican-alchemy/wiki/Tips](https://github.com/nairobilug/pelican-alchemy/wiki/Tips)
+https://github.com/nairobilug/pelican-alchemy/wiki/Tips
 
-## Maintainers
+## How to Contribute
 
-- [@nairobilug](https://github.com/nairobilug)
+1. Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug.
+1. Fork [the repository](https://github.com/nairobilug/pelican-alchemy) on GitHub to start making your changes to the master branch (or branch off of it).
+1. Send a pull request and bug the maintainer until it gets merged and published. :)
 
-## Contribute
-
-Feel free to dive in. [Open an issue](https://github.com/nairobilug/pelican-alchemy/issues/new) or submit a PR.
-
-**Alchemy** follows the [Contributor Covenant](CODE_OF_CONDUCT.md) code of conduct.
+Alchemy follows the [Contributor Covenant](CODE_OF_CONDUCT.md) code of conduct.
 
 ## License
 
-[MIT](LICENSE) © Nairobi GNU/Linux Users Group
+[MIT](LICENSE) © 2017 Nairobi GNU/Linux Users Group
