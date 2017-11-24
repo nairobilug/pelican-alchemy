@@ -1,5 +1,5 @@
 Title: Alpha Centauri
-Date: 2016-11-13 09:00
+Date: 2001-01-01 09:00
 Category: Planetary Stuff
 Tags: stars, planets, g-type
 Slug: alpha-centauri
