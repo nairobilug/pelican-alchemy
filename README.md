@@ -13,6 +13,7 @@ Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blo
 - [Favicon Generator](http://realfavicongenerator.net/) support
 - External analytics ([Google](https://analytics.google.com), [Gauges](https://gaug.es), [Piwik](https://piwik.org)) support **
 - External comments ([Disqus](https://disqus.com)) support **
+- [Bootswatch](https://bootswatch.com/) (themes for Bootstrap) support **
 
 ** Features link to external assets (webfonts etc).
 
@@ -59,6 +60,7 @@ Visit the [Settings wiki](https://github.com/nairobilug/pelican-alchemy/wiki/Set
 - **PYGMENTS_STYLE**: Built-in Pygments style for syntax highlighting.
 - **HIDE_AUTHORS**: Hide the author(s) of an article - useful for single author sites.
 - **RFG_FAVICONS**: Use a Favicon Generator package.
+- **BOOTSWATCH_THEME**: (optional) Bootswatch theme to apply.
 
 Misc settings:
 
