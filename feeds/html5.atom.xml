@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican Alchemy - HTML5</title><link href="https://nairobilug.github.io/pelican-alchemy/" rel="alternate"></link><link href="https://nairobilug.github.io/pelican-alchemy/feeds/html5.atom.xml" rel="self"></link><id>https://nairobilug.github.io/pelican-alchemy/</id><updated>2000-01-01T09:00:00+03:00</updated><entry><title>HTML5 Element Test</title><link href="https://nairobilug.github.io/pelican-alchemy/posts/html5-element-test.html" rel="alternate"></link><published>2000-01-01T09:00:00+03:00</published><updated>2000-01-01T09:00:00+03:00</updated><author><name>@taniarascia</name></author><id>tag:nairobilug.github.io,2000-01-01:/pelican-alchemy/posts/html5-element-test.html</id><summary type="html">&lt;p&gt;A example page containing common HTML5 elements for CSS testing purposes. https://github.com/taniarascia/html5-test/&lt;/p&gt;</summary><content type="html">&lt;p&gt;Common HTML5 elements for CSS testing purposes.&lt;/p&gt;
+&lt;h1&gt;Formatting&lt;/h1&gt;
+&lt;p&gt;This sentence is &lt;b&gt;bold&lt;/b&gt;. If you like semantics, you might go with
+  &lt;strong&gt;strong&lt;/strong&gt; or &lt;em&gt;emphasized&lt;/em&gt; text. If not, &lt;i&gt;italic&lt;/i&gt; is
+  still around. &lt;small&gt;Small&lt;/small&gt; text is for fine print. Your copy can also
+  be &lt;sub&gt;subscripted&lt;/sub&gt; and &lt;sup&gt;superscripted&lt;/sup&gt;, &lt;ins&gt;inserted&lt;/ins&gt;,
+  &lt;del&gt;deleted&lt;/del&gt;, or &lt;mark&gt;highlighted&lt;/mark&gt;. You would use a
+  &lt;a href="#!"&gt;hyperlink&lt;/a&gt; to go to a new page.&lt;/p&gt;
+&lt;p&gt;If you like to write about there are plenty of semantic tags for you.
+  There's the generic &lt;code&gt;code&lt;/code&gt;, as well as &lt;kbd&gt;keyboard input&lt;/kbd&gt;,
+  &lt;samp&gt;computer output&lt;/samp&gt;, and &lt;var&gt;variables&lt;/var&gt;.&lt;/p&gt;
+&lt;p&gt;You might have need of a &lt;cite&gt;citation&lt;/cite&gt;, &lt;q&gt;short quotation&lt;/q&gt;,
+  &lt;abbr&gt;abbreviation&lt;/abbr&gt;, or &lt;dfn&gt;definition&lt;/dfn&gt;. It might be
+  &lt;time&gt;10:00pm&lt;/time&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;address&gt;&lt;p&gt;123 Fake Street&lt;br/&gt; Springfield, USA&lt;/p&gt;&lt;/address&gt;&lt;/p&gt;
+&lt;h2&gt;Blockquote&lt;/h2&gt;
+&lt;blockquote class="blockquote"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+  molestiae et assumenda molestias alias ut saepe doloribus, porro, deleniti
+  neque, harum minus, commodi laudantium quod excepturi nam corrupti odit
+  provident. &lt;cite&gt;- Blockquote Citation&lt;/cite&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Preformatted Text&lt;/h2&gt;
+&lt;pre&gt;class Voila {
+public:
+// Voila
+static const string VOILA = "Voila";
+}&lt;/pre&gt;
+&lt;h2&gt;Horizontal Line&lt;/h2&gt;
+&lt;hr/&gt;
+&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h1&gt;First Heading h1&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus
+  cupiditate minima, magni possimus commodi, eveniet? Rem, adipisci architecto
+  pariatur libero aliquid culpa sunt accusantium. Ipsa error aliquid et!
+  Animi.&lt;/p&gt;
+&lt;h2&gt;Second Heading h2&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestias
+  ullam quasi est a nemo, accusamus voluptatum autem. Eius explicabo est
+  assumenda voluptatem id, hic maxime mollitia facere debitis quos.&lt;/p&gt;
+&lt;h3&gt;Third Heading h3&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti,
+  repudiandae rerum nam laborum eligendi aperiam. Autem id, ad necessitatibus
+  accusantium, facilis, quae ullam est, voluptates debitis fugiat quos
+  inventore!&lt;/p&gt;
+&lt;h4&gt;Fourth Heading h4&lt;/h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum eum
+  eligendi voluptatum quasi nisi doloremque ipsam unde, laboriosam nihil
+  voluptatem consequatur quam non similique vero ratione animi sit
+  veritatis.&lt;/p&gt;
+&lt;h5&gt;Fifth Heading h5&lt;/h5&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatem
+  necessitatibus eos iusto nam deserunt, dicta possimus error qui reiciendis,
+  aut dolore magnam eligendi maiores expedita commodi perferendis non
+  blanditiis.&lt;/p&gt;
+&lt;h1&gt;Lists&lt;/h1&gt;
+&lt;h2&gt;Unordered list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;List item one
+    &lt;ul&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ordered list&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;List item one
+    &lt;ol&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Definition List&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Definition Title One&lt;/dt&gt;
+&lt;dd&gt;First definition description&lt;/dd&gt; &lt;dt&gt;Definition Title Two&lt;/dt&gt;
+&lt;dd&gt;Second definition description&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h1&gt;Tables&lt;/h1&gt;
+&lt;table class="table table-striped table-hover"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Head 1&lt;/th&gt;
+&lt;th&gt;Head 2&lt;/th&gt;
+&lt;th&gt;Head 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+&lt;th&gt;Footer 1&lt;/th&gt;
+&lt;th&gt;Footer 2&lt;/th&gt;
+&lt;th&gt;Footer 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Description 1&lt;/td&gt;
+&lt;td&gt;Description 2&lt;/td&gt;
+&lt;td&gt;Description 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Description 1&lt;/td&gt;
+&lt;td&gt;Description 2&lt;/td&gt;
+&lt;td&gt;Description 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Description 1&lt;/td&gt;
+&lt;td&gt;Description 2&lt;/td&gt;
+&lt;td&gt;Description 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;Forms&lt;/h1&gt;
+&lt;form&gt;
+&lt;label for="text"&gt;Text Input&lt;/label&gt;
+&lt;input id="text" placeholder="Text Input" type="text"/&gt;
+&lt;label for="password"&gt;Password&lt;/label&gt;
+&lt;input id="password" placeholder="Password" type="password"/&gt;
+&lt;label for="url"&gt;URL&lt;/label&gt;
+&lt;input id="url" placeholder="http://www.example.com" type="url"/&gt;
+&lt;label for="email"&gt;Email Address&lt;/label&gt;
+&lt;input id="email" placeholder="email@example.com" type="email"/&gt;
+&lt;label for="phone"&gt;Phone Number&lt;/label&gt;
+&lt;input id="phone" placeholder="123-123-1234" type="tel"/&gt;
+&lt;label for="search"&gt;Search&lt;/label&gt;
+&lt;input id="search" placeholder="Search" type="search"/&gt;
+&lt;label for="number"&gt;Number&lt;/label&gt;
+&lt;input id="number" placeholder="Number" type="number"/&gt;
+&lt;label for="select"&gt;Select&lt;/label&gt;
+&lt;select id="select"&gt;
+&lt;option&gt;Option One&lt;/option&gt;
+&lt;option&gt;Option Two&lt;/option&gt;
+&lt;option&gt;Option Three&lt;/option&gt;
+&lt;/select&gt;
+&lt;label for="checkbox1"&gt;
+&lt;input checked="checked" id="checkbox1" name="checkbox" type="checkbox"/&gt; Choice A&lt;/label&gt;
+&lt;label for="checkbox2"&gt;
+&lt;input id="checkbox2" name="checkbox" type="checkbox"/&gt; Choice B&lt;/label&gt;
+&lt;label for="radio1"&gt;
+&lt;input checked="checked" class="radio" id="radio1" name="radio" type="radio"/&gt; Option 1&lt;/label&gt;
+&lt;label for="radio2"&gt;
+&lt;input class="radio" id="radio2" name="radio" type="radio"/&gt; Option 2&lt;/label&gt;
+&lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+&lt;textarea cols="30" id="textarea" placeholder="Message" rows="5"&gt;&lt;/textarea&gt;
+&lt;input type="button" value="Button"/&gt;
+&lt;input type="submit" value="Submit"/&gt;
+&lt;input type="reset" value="Reset"/&gt;
+&lt;button&gt;Button element&lt;/button&gt;
+&lt;/form&gt;
+&lt;h2&gt;Fieldset and Legend&lt;/h2&gt;
+&lt;form&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Legend&lt;/legend&gt;
+&lt;label for="text"&gt;Text Input&lt;/label&gt;
+&lt;input id="text" placeholder="Text Input" type="text"/&gt;
+&lt;input type="submit" value="Submit"/&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</content><category term="html"></category><category term="sample"></category><category term="test"></category></entry></feed>
