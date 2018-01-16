@@ -6,7 +6,7 @@ Alchemy is a functional, clean, responsive theme for the [Pelican](http://getpel
 
 Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog), it features:
 
-- Powered by [Bootstrap 4](http://v4-alpha.getbootstrap.com/) (v4.0.0-beta.3)
+- Powered by [Bootstrap 4](https://getbootstrap.com/) (v4.0.0-beta.3)
 - [Font Awesome](http://fontawesome.io/) icons
 - [Pygments](http://pygments.org/) syntax highlighting styles
 - Pelican `sitemap.xml` support
