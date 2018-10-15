@@ -21,7 +21,9 @@
             {% if LINKS and loop.first %}
               <li class="list-inline-item text-muted">|</li>
             {% endif %}
-            <li class="list-inline-item"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            <li class="list-inline-item">
+              <a class="{% if DISPLAY_SELECTED_PAGE and output_file == page.url %}nav-active{% endif %}" href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+            </li>
           {% endfor %}
         {% endif %}
         {% for icon, link in ICONS %}
