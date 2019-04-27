@@ -18,16 +18,16 @@
     <header>
       <ul class="list-inline">
         <li class="list-inline-item text-muted" title="{{ article.date.isoformat() }}">
-          <i class="fa fa-clock-o"></i>
+          <i class="fas fa-clock"></i>
           {{ article.locale_date }}
         </li>
         <li class="list-inline-item">
-          <i class="fa fa-folder-open-o"></i>
+          <i class="fas fa-folder-open"></i>
           <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
         </li>
         {% if not HIDE_AUTHORS and article.authors %}
           <li class="list-inline-item">
-            <i class="fa fa-user-o"></i>
+            <i class="fas fa-user"></i>
             {% for author in article.authors %}
               <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
@@ -35,7 +35,7 @@
         {% endif %}
         {% if article.tags %}
           <li class="list-inline-item">
-            <i class="fa fa-files-o"></i>
+            <i class="fas fa-tag"></i>
             {% for tag in article.tags %}
               <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}

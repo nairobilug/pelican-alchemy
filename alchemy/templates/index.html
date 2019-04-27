@@ -21,16 +21,16 @@
       <header class="col-sm-4 text-muted">
         <ul>
           <li title="{{ article.date.isoformat() }}">
-            <i class="fa fa-clock-o"></i>
+            <i class="fas fa-clock"></i>
             {{ article.locale_date }}
           </li>
           <li>
-            <i class="fa fa-folder-open-o"></i>
+            <i class="fas fa-folder-open"></i>
             <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
           </li>
           {% if not HIDE_AUTHORS and article.authors %}
             <li>
-              <i class="fa fa-user-o"></i>
+              <i class="fas fa-user"></i>
               {% for author in article.authors %}
                 <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
               {% endfor %}
