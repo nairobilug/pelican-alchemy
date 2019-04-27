@@ -41,6 +41,14 @@
             {% endfor %}
           </li>
         {% endif %}
+        {% if article.translations %}
+          <li class="list-inline-item">
+            <i class="fas fa-globe"></i>
+            {% for translation in article.translations %}
+              <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+            {% endfor %}
+          </li>
+        {% endif %}
       </ul>
     </header>
     <div class="content">
