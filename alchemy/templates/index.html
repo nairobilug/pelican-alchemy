@@ -38,6 +38,14 @@
               {% endfor %}
             </li>
           {% endif %}
+          {% if TAGS_IN_INDEX and article.tags %}
+            <li>
+              <i class="fas fa-tag"></i>
+              {% for tag in article.tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+              {% endfor %}
+            </li>
+        {% endif %}
         </ul>
       </header>
       <div class="col-sm-8">
