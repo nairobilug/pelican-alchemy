@@ -105,6 +105,38 @@ hr {
   text-decoration: underline
 }
 
+.admonition {
+  border: thin solid gray;
+  background-color: lightgrey;
+  padding: .25em .5em;
+  margin-bottom: 1rem;
+}
+
+.admonition .admonition-title {
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.66);
+  text-align: center;
+}
+
+.admonition p.last  {
+  margin-bottom: 0;
+}
+
+.admonition.important, .admonition.note, .admonition.warning {
+  border-color: goldenrod;
+  background-color: lightgoldenrodyellow;
+}
+
+.admonition.attention, .admonition.caution, .admonition.danger, .admonition.error {
+  border-color: red;
+  background-color: lightpink;
+}
+
+.admonition.hint, .admonition.tip {
+  border-color: limegreen;
+  background-color: palegreen;
+}
+
 @media (min-width: 576px) {
   .header .title {
     font-size: 3rem;
