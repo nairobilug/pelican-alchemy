@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#333333">
   {% endif %}
 
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ BOOTSTRAP_CSS or SITEURL + '/theme/css/bootstrap.min.css'}}">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('default') }}.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
