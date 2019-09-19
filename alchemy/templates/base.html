@@ -21,6 +21,13 @@
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('default') }}.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
+  {% for stylesheet in THEME_CSS_OVERRIDES or () %}
+  {% if stylesheet|lower|truncate(4, True, '') == 'http' %}
+  <link rel="stylesheet" href="{{ stylesheet }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ SITEURL + '/' + stylesheet }}">
+  {% endif %}
+  {% endfor %}
 
   {% include 'include/xml_feeds.html' %}
   {% block head %}{% endblock %}
