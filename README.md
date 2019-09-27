@@ -60,6 +60,8 @@ Visit the [Settings wiki](https://github.com/nairobilug/pelican-alchemy/wiki/Set
 - **PYGMENTS_STYLE**: Built-in Pygments style for syntax highlighting.
 - **HIDE_AUTHORS**: Hide the author(s) of an article - useful for single author sites.
 - **RFG_FAVICONS**: Use a Favicon Generator package.
+- **THEME_CSS_OVERRIDES**: Sequence of stylesheet URLs to override CSS provided by theme.
+  Both relative and absolute URLs are supported.
 
 Misc settings:
 
