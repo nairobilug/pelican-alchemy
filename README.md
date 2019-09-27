@@ -56,6 +56,7 @@ Visit the [Settings wiki](https://github.com/nairobilug/pelican-alchemy/wiki/Set
 - **DESCRIPTION**: Index HTML head `<meta>` description.
 - **LINKS**: A list of tuples (Title, URL) for menu links.
 - **ICONS**: A list of tuples (Icon, URL) for icon links.
+- **BOOTSTRAP_CSS**: URL of Bootstrap CSS file. Use this to enable Boostwatch themes.
 - **PYGMENTS_STYLE**: Built-in Pygments style for syntax highlighting.
 - **HIDE_AUTHORS**: Hide the author(s) of an article - useful for single author sites.
 - **RFG_FAVICONS**: Use a Favicon Generator package.
