@@ -20,6 +20,8 @@ Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blo
 
 ## Installation
 
+### From Git repo
+
 Clone the repo:
 
 ```bash
@@ -45,6 +47,21 @@ And in Pelican config:
 
 ```python
 THEME = 'themes/pelican-alchemy/alchemy'
+```
+
+### With pip
+
+Alternatively, you can install this theme with pip:
+
+```bash
+pip install "https://github.com/nairobilug/pelican-alchemy/tarball/master"
+```
+
+And import it from Pelican config:
+
+```python
+import alchemy
+THEME = alchemy.path()
 ```
 
 ## Usage
