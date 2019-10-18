@@ -123,6 +123,9 @@ Visit the [Settings wiki](https://github.com/nairobilug/pelican-alchemy/wiki/Set
 - **RFG_FAVICONS**: Use a Favicon Generator package.
 - **THEME_CSS_OVERRIDES**: Sequence of stylesheet URLs to override CSS provided by theme.
   Both relative and absolute URLs are supported.
+- **THEME_JS_OVERRIDES**: Sequence of JavaScript URLs to enable with this
+  theme. Alchemy uses no JS by default. Both relative and absolute URLs are
+  supported.
 
 Misc settings:
 
