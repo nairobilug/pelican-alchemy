@@ -16,7 +16,52 @@ Inspired by [crowsfoot](http://github.com/porterjamesj/crowsfoot) and [clean-blo
 
 ** Features link to external assets (webfonts etc).
 
-![](screenshot.jpg)
+## Screenshots
+
+Alchemy supports Boostwatch themes!
+
+<table>
+<tr>
+  <td colspan="2">
+    <a href="screenshots/default.png">
+      <img src="screenshots/default.png"/>
+      <p align="center">Default colors</p>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="screenshots/oldstyle.png">
+      <img src="screenshots/oldstyle.png"/>
+      <p align="center">Old style (see below)</p>
+    </a>
+  </td>
+  <td>
+    <a href="screenshots/sketchy.png">
+      <img src="screenshots/sketchy.png"/>
+      <p align="center">Sketchy (Boostwatch)</p>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="screenshots/solar.png">
+      <img src="screenshots/solar.png"/>
+      <p align="center">Solar (Boostwatch)</p>
+    </a>
+  </td>
+  <td>
+    <a href="screenshots/united.png">
+      <img src="screenshots/united.png"/>
+      <p align="center">United (Boostwatch)</p>
+    </a>
+  </td>
+</tr>
+</table>
+
+> To enable old visual style add `THEME_CSS_OVERRIDES = ['theme/css/oldstyle.css']`
+> to your `pelicanconf.py` and use no Boostwatch themes.
+> See [stylesheet](alchemy/static/css/oldstyle.css) for more information.
 
 ## Installation
 
