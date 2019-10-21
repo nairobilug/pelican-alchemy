@@ -3,10 +3,14 @@
     {% if not HIDE_AUTHORS %}
       <li class="list-inline-item"><a href="{{ SITEURL }}/authors.html">Authors</a></li>
     {% endif %}
+    {% if not HIDE_ARCHIVES %}
     <li class="list-inline-item"><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+    {% endif %}
+    {% if not HIDE_CATEGORIES %}
     <li class="list-inline-item"><a href="{{ SITEURL }}/categories.html">Categories</a></li>
     {% if tags|length %}
       <li class="list-inline-item"><a href="{{ SITEURL }}/tags.html">Tags</a></li>
+    {% endif %}
     {% endif %}
   </ul>
   <p class="col-sm-6 text-sm-right text-muted">
