@@ -42,6 +42,10 @@
           </li>
         {% endif %}
       </ul>
+      {% if article.image %}
+        <img class="article-image img-fluid rounded" alt="article header image" itemprop="image"
+          src="{{ article.image }}" />
+      {% endif %}
     </header>
     <div class="content">
       {{ article.content }}
