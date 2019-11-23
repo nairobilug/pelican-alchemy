@@ -18,3 +18,10 @@
     Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
   </noscript>
 {% endif %}
+{% if ISSO_URL and SITEURL and article.status != "draft" %}
+  <div id="isso_thread">
+  <script data-isso="{{ ISSO_URL }}/"
+    src="{{ ISSO_URL }}/js/embed.min.js"></script>
+  <section id="isso-thread"></section>
+  </div>
+{% endif %}

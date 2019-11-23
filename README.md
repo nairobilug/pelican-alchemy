@@ -134,6 +134,7 @@ Misc settings:
 - **DISQUS_SITENAME**
 - **GAUGES**
 - **GOOGLE_ANALYTICS**
+- **ISSO_URL**
 - **PIWIK_URL**
 - **PIWIK_SITE_ID**
 
