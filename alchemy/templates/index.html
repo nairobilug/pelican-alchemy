@@ -45,6 +45,10 @@
         <div class="content">
           {{ article.summary|striptags }}
         </div>
+        {% if article.image %}
+          <img class="article-image img-fluid rounded" alt="article header image" itemprop="image"
+            src="{{ article.image }}" />
+        {% endif %}
       </div>
     </article>
     {% if not loop.last %}
