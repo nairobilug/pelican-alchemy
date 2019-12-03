@@ -1,3 +1,5 @@
+# Settings
+
 Unless otherwise specified, settings that refer to paths can be either absolute or relative to the configuration file.
 
 ## SITESUBTITLE

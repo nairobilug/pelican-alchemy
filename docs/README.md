@@ -1,4 +1,4 @@
-Welcome to the pelican-alchemy wiki!
+Welcome to the pelican-alchemy documentation!
 
-- [Pelican Tips](wiki/Pelican-Tips)
-- [Settings](wiki/Settings)
+- [Pelican Tips](pelican-tips.md)
+- [Settings](settings.md)

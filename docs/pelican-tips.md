@@ -1,3 +1,5 @@
+# Pelican Tips
+
 ## Bootstrap Classes
 
 To have Bootstrap classes set for rendered html (`.table`, `.img-fluid` etc), use the [Bootstrapify](https://github.com/ingwinlu/pelican-bootstrapify) Pelican plugin.
