@@ -110,7 +110,7 @@ THEME = alchemy.path()
 
 ## Usage
 
-Visit the [Settings wiki](https://github.com/nairobilug/pelican-alchemy/wiki/Settings) for examples:
+Visit the [Settings docs](docs/settings.md) for examples:
 
 - **SITESUBTITLE**: Subtitle that appears in the header.
 - **SITEIMAGE**: Image that appears in the header.
@@ -141,7 +141,7 @@ Example [pelicanconf.py](https://github.com/nairobilug/pelican-alchemy/blob/demo
 
 ### Tips & Tricks
 
-https://github.com/nairobilug/pelican-alchemy/wiki/Tips
+[See documentation page](docs/pelican-tips.md)
 
 ## How to Contribute
 
