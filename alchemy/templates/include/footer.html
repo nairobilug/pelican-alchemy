@@ -5,7 +5,9 @@
       <li class="list-inline-item"><a href="{{ SITEURL }}/{{ AUTHORS_URL or AUTHORS_SAVE_AS or 'authors.html' }}">Authors</a></li>
     {% endif %}
     <li class="list-inline-item"><a href="{{ SITEURL }}/{{ ARCHIVES_URL or ARCHIVES_SAVE_AS or 'archives.html' }}">Archives</a></li>
-    <li class="list-inline-item"><a href="{{ SITEURL }}/{{ CATEGORIES_URL or CATEGORIES_SAVE_AS or 'categories.html' }}">Categories</a></li>
+    {% if not HIDE_CATEGORIES %}
+        <li class="list-inline-item"><a href="{{ SITEURL }}/{{ CATEGORIES_URL or CATEGORIES_SAVE_AS or 'categories.html' }}">Categories</a></li>
+    {% endif %}
     {% if tags|length %}
       <li class="list-inline-item"><a href="{{ SITEURL }}/{{ TAGS_URL or TAGS_SAVE_AS or 'tags.html' }}">Tags</a></li>
     {% endif %}

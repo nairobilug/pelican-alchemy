@@ -13,14 +13,14 @@
         href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}">{% endif %}
 {% if CATEGORY_FEED_ATOM and category %}
   <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
-        href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(slug=category.slug) }}">{% endif %}
+        href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM.format(slug=category.slug) }}">{% endif %}
 {% if CATEGORY_FEED_RSS and category %}
   <link rel="alternate" type="application/rss+xml" title="Categories RSS Feed"
-        href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(slug=category.slug) }}">{% endif %}
+        href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS.format(slug=category.slug) }}">{% endif %}
 {% if TAG_FEED_ATOM and tag %}
   <link rel="alternate" type="application/atom+xml" title="Tags Atom Feed"
-        href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(slug=tag.slug) }}">{% endif %}
+        href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM.format(slug=tag.slug) }}">{% endif %}
 {% if TAG_FEED_RSS and tag %}
   <link rel="alternate" type="application/rss+xml" title="Tags RSS Feed"
-        href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(slug=tag.slug) }}">
+        href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS.format(slug=tag.slug) }}">
 {% endif %}
