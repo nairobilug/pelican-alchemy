@@ -40,7 +40,7 @@
       </header>
       <div class="col-sm-8">
         <h4 class="title">
-          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}{% if article.link %} <i class="fas fa-link"></i>{% endif %}</a>
         </h4>
         <div class="content">
           {{ article.summary|striptags }}

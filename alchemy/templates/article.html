@@ -10,7 +10,13 @@
 {% endblock %}
 
 {% block page_header %}
+  {% if article.link %}
+    <a href="{{ article.link }}" rel="bookmark">
+  {% endif %}
   {{ article.title }}
+  {% if article.link %}
+    <i class="fas fa-link"></i></a>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
@@ -53,6 +59,11 @@
     </header>
     <div class="content">
       {{ article.content }}
+      {% if article.link %}
+        <p class="link-button"><a href="{{ article.link }}" rel="bookmark">
+          <i class="fas fa-link"></i> view link
+        </a></p>
+      {% endif %}
     </div>
   </article>
   {% include 'include/comments.html' %}

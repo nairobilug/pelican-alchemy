@@ -59,6 +59,11 @@ RFG_FAVICONS = True
 unzip -l <PATH_TO_PACKAGE>.zip
 ```
 
+## Link posts
+
+When adding a Link: field to the post's metadata header, the article will be rendered as a link post, which means a link icon will appear behind its title, and the title of the article will link to the destination of the link when viewing the article page. In that same page a 'view link' link/button will be rendered at the end of the content.
+
+
 ## Use `sitemap.xml`
 
 There is a `sitemap.html` Jinja2 template that can be used to [generate a sitemap](https://github.com/getpelican/pelican/wiki/Tips-n-Tricks#generate-sitemapxml).
