@@ -116,7 +116,10 @@ Visit the [Settings docs](docs/settings.md) for examples:
 - **SITEIMAGE**: Image that appears in the header.
 - **DESCRIPTION**: Index HTML head `<meta>` description.
 - **LINKS**: A list of tuples (Title, URL) for menu links.
-- **ICONS**: A list of tuples (Icon, URL) for icon links.
+- **ICONS**: A list of tuples (Icon, URL) for icon links. Icons are assumed to
+  be Font Awesome brand icons, if you need to use icons from other Font
+  Awesome icon set please provide full [CSS class], e.g. `fas fa-camera`
+  instead on just `camera`
 - **FOOTER_LINKS**: A list of tuples (Title, URL) for footer links. Replaces
   default set of links (Authors, Archives, Categories, Tags).
 - **BOOTSTRAP_CSS**: URL of Bootstrap CSS file. Use this to enable Boostwatch themes.
@@ -128,6 +131,8 @@ Visit the [Settings docs](docs/settings.md) for examples:
 - **THEME_JS_OVERRIDES**: Sequence of JavaScript URLs to enable with this
   theme. Alchemy uses no JS by default. Both relative and absolute URLs are
   supported.
+
+[CSS class]: https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
 
 Misc settings:
 
