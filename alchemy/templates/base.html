@@ -27,13 +27,12 @@
   {% endif %}
 
   <link rel="stylesheet" href="{{ url(BOOTSTRAP_CSS or '/theme/css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/fontawesome.min.css">
+  <link rel="stylesheet" href="{{ url(FONTAWESOME_CSS or '/theme/css/fontawesome.min.css') }}">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('default') }}.min.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
   {% for stylesheet in THEME_CSS_OVERRIDES or () %}
   <link rel="stylesheet" href="{{ url(stylesheet) }}">
   {% endfor %}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   {% include 'include/xml_feeds.html' %}
   {% block head %}{% endblock %}

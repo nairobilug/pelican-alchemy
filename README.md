@@ -123,6 +123,8 @@ Visit the [Settings docs](docs/settings.md) for examples:
 - **FOOTER_LINKS**: A list of tuples (Title, URL) for footer links. Replaces
   default set of links (Authors, Archives, Categories, Tags).
 - **BOOTSTRAP_CSS**: URL of Bootstrap CSS file. Use this to enable Boostwatch themes.
+- **FONTAWESOME_CSS**: URL of Font Awesome CSS file. Use this if you wish to
+  use CDN provided version instead of the bundled one.
 - **PYGMENTS_STYLE**: Built-in Pygments style for syntax highlighting.
 - **HIDE_AUTHORS**: Hide the author(s) of an article - useful for single author sites.
 - **RFG_FAVICONS**: Use a Favicon Generator package.
