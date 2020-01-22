@@ -5,7 +5,7 @@
 } -%}
 {%- if icon in fa_special_icons -%}
 {{ fa_special_icons[icon] }}
-{%- elif icon.startswith("fa") -%}
+{%- elif icon.split()|select("in", ["fab", "fas", "far", "fal", "fad"])|list -%}
 {{ icon }}
 {%- else -%}
 fab fa-{{icon}}
