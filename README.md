@@ -28,3 +28,12 @@ This takes the Markdown files from the `content/` directory and generates static
 You can serve the generated site so it can be previewed in your browser:
 
     $ make serve
+
+
+## Publish updated demo to GitHub pages
+
+The process is completely automated via Makefile recipe:
+
+    $ make github
+
+Required tools will be installed into `.venv` if missing.
