@@ -1,0 +1,48 @@
+/* Restore colors as they were before adding Boostwatch support
+ * https://github.com/nairobilug/pelican-alchemy/pull/79
+ *
+ * Add THEME_CSS_OVERRIDES = ['theme/css/oldstyle.css']
+ * to your pelicanconf.py to enable this stylesheet */
+
+::selection {
+  background: #0085a1;
+  color: #fff;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #333;
+}
+
+a:focus,
+a:hover {
+  color: #0085a1;
+}
+
+blockquote {
+  color: #818a91;
+  opacity: inherit;
+}
+
+.header {
+  border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+.main {
+  background-color: #fff;
+}
+
+.footer {
+  border-top: 1px solid rgba(0,0,0,.1)
+}
+
+.highlight pre {
+  border: 1px solid rgba(0,0,0,.1)
+}
+
+.pagination .page-link {
+  color: #333;
+}

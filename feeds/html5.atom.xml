@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican Alchemy - HTML5</title><link href="https://nairobilug.github.io/pelican-alchemy/" rel="alternate"></link><link href="https://nairobilug.github.io/pelican-alchemy/feeds/html5.atom.xml" rel="self"></link><id>https://nairobilug.github.io/pelican-alchemy/</id><updated>2000-01-01T09:00:00+03:00</updated><entry><title>HTML5 Element Test</title><link href="https://nairobilug.github.io/pelican-alchemy/posts/html5-element-test.html" rel="alternate"></link><published>2000-01-01T09:00:00+03:00</published><updated>2000-01-01T09:00:00+03:00</updated><author><name>@taniarascia</name></author><id>tag:nairobilug.github.io,2000-01-01:/pelican-alchemy/posts/html5-element-test.html</id><summary type="html">&lt;p&gt;A example page containing common HTML5 elements for CSS testing purposes. https://github.com/taniarascia/html5-test/&lt;/p&gt;</summary><content type="html">&lt;p&gt;Common HTML5 elements for CSS testing purposes.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican Alchemy - HTML5</title><link href="https://nairobilug.github.io/pelican-alchemy/" rel="alternate"></link><link href="https://nairobilug.github.io/pelican-alchemy/feeds/html5.atom.xml" rel="self"></link><id>https://nairobilug.github.io/pelican-alchemy/</id><updated>2000-01-01T09:00:00+03:00</updated><subtitle>A magical ✨ Pelican theme</subtitle><entry><title>HTML5 Element Test</title><link href="https://nairobilug.github.io/pelican-alchemy/posts/html5-element-test.html" rel="alternate"></link><published>2000-01-01T09:00:00+03:00</published><updated>2000-01-01T09:00:00+03:00</updated><author><name>@taniarascia</name></author><id>tag:nairobilug.github.io,2000-01-01:/pelican-alchemy/posts/html5-element-test.html</id><summary type="html">&lt;p&gt;A example page containing common HTML5 elements for CSS testing purposes. https://github.com/taniarascia/html5-test/&lt;/p&gt;</summary><content type="html">&lt;p&gt;Common HTML5 elements for CSS testing purposes.&lt;/p&gt;
 &lt;h1&gt;Formatting&lt;/h1&gt;
 &lt;p&gt;This sentence is &lt;b&gt;bold&lt;/b&gt;. If you like semantics, you might go with
   &lt;strong&gt;strong&lt;/strong&gt; or &lt;em&gt;emphasized&lt;/em&gt; text. If not, &lt;i&gt;italic&lt;/i&gt; is
@@ -13,7 +13,7 @@
 &lt;p&gt;You might have need of a &lt;cite&gt;citation&lt;/cite&gt;, &lt;q&gt;short quotation&lt;/q&gt;,
   &lt;abbr&gt;abbreviation&lt;/abbr&gt;, or &lt;dfn&gt;definition&lt;/dfn&gt;. It might be
   &lt;time&gt;10:00pm&lt;/time&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;address&gt;&lt;p&gt;123 Fake Street&lt;br/&gt; Springfield, USA&lt;/p&gt;&lt;/address&gt;&lt;/p&gt;
+&lt;address&gt;&lt;p&gt;123 Fake Street&lt;br/&gt; Springfield, USA&lt;/p&gt;&lt;/address&gt;
 &lt;h2&gt;Blockquote&lt;/h2&gt;
 &lt;blockquote class="blockquote"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
   molestiae et assumenda molestias alias ut saepe doloribus, porro, deleniti
@@ -81,7 +81,7 @@ static const string VOILA = "Voila";
 &lt;dd&gt;Second definition description&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;h1&gt;Tables&lt;/h1&gt;
-&lt;table class="table table-striped table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Head 1&lt;/th&gt;
@@ -159,4 +159,4 @@ static const string VOILA = "Voila";
 &lt;input id="text" placeholder="Text Input" type="text"/&gt;
 &lt;input type="submit" value="Submit"/&gt;
 &lt;/fieldset&gt;
-&lt;/form&gt;</content><category term="html"></category><category term="sample"></category><category term="test"></category></entry></feed>
+&lt;/form&gt;</content><category term="HTML5"></category><category term="html"></category><category term="sample"></category><category term="test"></category></entry></feed>

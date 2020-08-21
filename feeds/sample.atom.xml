@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican Alchemy - Sample</title><link href="https://nairobilug.github.io/pelican-alchemy/" rel="alternate"></link><link href="https://nairobilug.github.io/pelican-alchemy/feeds/sample.atom.xml" rel="self"></link><id>https://nairobilug.github.io/pelican-alchemy/</id><updated>2002-01-01T09:00:00+03:00</updated><entry><title>Sample Bootstrap Post</title><link href="https://nairobilug.github.io/pelican-alchemy/posts/sample-bootstrap-post.html" rel="alternate"></link><published>2002-01-01T09:00:00+03:00</published><updated>2002-01-01T09:00:00+03:00</updated><author><name>Alchemy</name></author><id>tag:nairobilug.github.io,2002-01-01:/pelican-alchemy/posts/sample-bootstrap-post.html</id><summary type="html">&lt;p&gt;This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported. Magical.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican Alchemy - Sample</title><link href="https://nairobilug.github.io/pelican-alchemy/" rel="alternate"></link><link href="https://nairobilug.github.io/pelican-alchemy/feeds/sample.atom.xml" rel="self"></link><id>https://nairobilug.github.io/pelican-alchemy/</id><updated>2002-01-01T09:00:00+03:00</updated><subtitle>A magical ✨ Pelican theme</subtitle><entry><title>Sample Bootstrap Post</title><link href="https://nairobilug.github.io/pelican-alchemy/posts/sample-bootstrap-post.html" rel="alternate"></link><published>2002-01-01T09:00:00+03:00</published><updated>2002-01-01T09:00:00+03:00</updated><author><name>Alchemy</name></author><id>tag:nairobilug.github.io,2002-01-01:/pelican-alchemy/posts/sample-bootstrap-post.html</id><summary type="html">&lt;p&gt;This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported. Magical.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.&lt;/p&gt;
 &lt;hr/&gt;
 &lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href="#"&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
 &lt;blockquote class="blockquote"&gt;
@@ -10,7 +10,7 @@
 &lt;p&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
 &lt;h3&gt;Sub-heading&lt;/h3&gt;
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nt"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"AwesomeProject"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
     &lt;span class="nt"&gt;"version"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"0.0.1"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
     &lt;span class="nt"&gt;"private"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -32,7 +32,7 @@
         &lt;span class="nt"&gt;"preset"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"react-native"&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
 &lt;h3&gt;Sub-heading&lt;/h3&gt;
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
@@ -47,4 +47,4 @@
 &lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
 &lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;</content><category term="sample"></category><category term="bootstrap"></category><category term="post"></category></entry></feed>
+&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;</content><category term="Sample"></category><category term="sample"></category><category term="bootstrap"></category><category term="post"></category></entry></feed>
