@@ -31,10 +31,18 @@ blockquote {
   border-bottom: 1px solid rgba(0,0,0,.1)
 }
 
+.main {
+  background-color: #fff;
+}
+
 .footer {
   border-top: 1px solid rgba(0,0,0,.1)
 }
 
 .highlight pre {
   border: 1px solid rgba(0,0,0,.1)
+}
+
+.pagination .page-link {
+  color: #333;
 }
