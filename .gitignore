@@ -5,3 +5,7 @@ __pycache__/
 
 # Pelican output directory
 output/
+
+# Virtual environment
+/.venv
+/Makefile.venv

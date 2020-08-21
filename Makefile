@@ -1,5 +1,5 @@
 PY?=python
-PELICAN?=pelican
+PELICAN?=$(VENV)/pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -67,42 +67,44 @@ submodule:
 	git submodule update
 
 
-html:
+html: | venv
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
-regenerate:
+regenerate: | venv
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-serve:
+serve: | venv
 ifdef PORT
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+	cd $(OUTPUTDIR) && $(VENV)/python -m pelican.server $(PORT)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	cd $(OUTPUTDIR) && $(VENV)/python -m pelican.server
 endif
 
-serve-global:
+serve-global: | venv
 ifdef SERVER
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 $(SERVER)
+	cd $(OUTPUTDIR) && $(VENV)/python -m pelican.server 80 $(SERVER)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 0.0.0.0
+	cd $(OUTPUTDIR) && $(VENV)/python -m pelican.server 80 0.0.0.0
 endif
 
 
-devserver:
+devserver: export PY=$(VENV)/python
+devserver: | venv
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
 else
 	$(BASEDIR)/develop_server.sh restart
 endif
 
-stopserver:
+stopserver: export PY=$(VENV)/python
+stopserver: | venv
 	$(BASEDIR)/develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-publish:
+publish: | venv
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish
@@ -128,3 +130,16 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+
+
+# Automatically manage Python virtual environment
+include Makefile.venv
+Makefile.venv:
+	curl \
+		-o Makefile.fetched \
+		-L "https://github.com/sio/Makefile.venv/raw/v2020.08.14/Makefile.venv"
+	echo "5afbcf51a82f629cd65ff23185acde90ebe4dec889ef80bbdc12562fbd0b2611 *Makefile.fetched" \
+		| sha256sum --check - \
+		&& mv Makefile.fetched Makefile.venv
+VENVDIR:=$(abspath $(VENVDIR))
+export PELICAN
