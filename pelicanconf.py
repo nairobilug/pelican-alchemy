@@ -51,6 +51,7 @@ BOOTSTRAPIFY = {
 # Theme settings --------------------------------------------------------------
 
 THEME = 'themes/pelican-alchemy/alchemy'
+THEME_CSS_OVERRIDES = ['theme/css/oldstyle.css']
 
 SITESUBTITLE = 'A magical \u2728 Pelican theme'
 SITEIMAGE = '/images/profile.jpg width=200 height=200'
