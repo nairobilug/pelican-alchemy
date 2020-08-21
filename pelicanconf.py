@@ -10,6 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'Africa/Nairobi'
 DEFAULT_LANG = 'en'
+LOCALE = 'C'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
