@@ -9,15 +9,15 @@ If you haven't already, clone this repo (or your version of it), and:
     $ git submodule init
     $ git submodule update
 
-## Install Pelican & friends
-
-Use `pip` to install the list of dependencies (including Pelican) into your virtual environment:
-
-    $ pip install -r requirements.txt
+Makefile provides a recipe to do the exact same thing: `make submodule`
 
 ## Generate the website
 
-Now that the dependencies exists, we can build:
+All dependencies are intalled automatically when you invoke Pelican via
+Makefile recipes. New virtual environment is automatically created in `.venv`
+directory.
+
+To build demo pages execute:
 
     $ make html
 
