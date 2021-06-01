@@ -13,6 +13,10 @@
       <priority>0.8</priority>
     </url>
     <url>
+      <loc>https://nairobilug.github.io/pelican-alchemy/posts/testing-rst-admonitions.html</loc>
+      <priority>0.8</priority>
+    </url>
+    <url>
       <loc>https://nairobilug.github.io/pelican-alchemy/pages/about.html</loc>
       <priority>1.0</priority>
     </url>

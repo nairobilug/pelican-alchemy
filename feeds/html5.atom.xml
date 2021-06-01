@@ -81,7 +81,7 @@ static const string VOILA = "Voila";
 &lt;dd&gt;Second definition description&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;h1&gt;Tables&lt;/h1&gt;
-&lt;table class="table table-hover table-striped"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Head 1&lt;/th&gt;

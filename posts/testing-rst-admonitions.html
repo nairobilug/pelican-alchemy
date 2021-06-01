@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>  Tags | Pelican Alchemy
+  <title>  Testing RST admonitions | Pelican Alchemy
 </title>
-  <link rel="canonical" href="https://nairobilug.github.io/pelican-alchemy/tags.html">
+  <link rel="canonical" href="https://nairobilug.github.io/pelican-alchemy/posts/testing-rst-admonitions.html">
 
     <link rel="apple-touch-icon" href="https://nairobilug.github.io/pelican-alchemy/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" type="image/png" href="https://nairobilug.github.io/pelican-alchemy/favicon-32x32.png" sizes="32x32">
@@ -24,6 +24,9 @@
 
   <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
         href="https://nairobilug.github.io/pelican-alchemy/feeds/all.atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="https://nairobilug.github.io/pelican-alchemy/feeds/misc.atom.xml">  
+  <meta name="description" content="Discussion: https://github.com/nairobilug/pelican-alchemy/pull/88 Spec: https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions !DANGER! Beware killer rabbits! Note This is a note admonition. This is the second line of the first paragraph. Important This is a important admonition. This is the second line of …">
 
 
 </head>
@@ -57,55 +60,78 @@
 
   <div class="main">
     <div class="container">
-      <h1>  Tags
+      <h1>  Testing RST admonitions
 </h1>
       <hr>
-  <table class="table table-bordered table-striped">
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/admonitions.html">#admonitions</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/bootstrap.html">#bootstrap</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/g-type.html">#g-type</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/html.html">#html</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/markup.html">#markup</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/planets.html">#planets</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/post.html">#post</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/rst.html">#rst</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/sample.html">#sample</a></td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/stars.html">#stars</a></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><a href="https://nairobilug.github.io/pelican-alchemy/tag/test.html">#test</a></td>
-        <td>1</td>
-      </tr>
-  </table>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="1999-01-01T00:00:00+03:00">
+          <i class="fas fa-clock"></i>
+          Fri 01 January 1999
+        </li>
+        <li class="list-inline-item">
+          <i class="fas fa-folder-open"></i>
+          <a href="https://nairobilug.github.io/pelican-alchemy/category/misc.html">misc</a>
+        </li>
+          <li class="list-inline-item">
+            <i class="fas fa-user"></i>
+              <a href="https://nairobilug.github.io/pelican-alchemy/author/vitaly-potyarkin.html">Vitaly Potyarkin</a>          </li>
+          <li class="list-inline-item">
+            <i class="fas fa-tag"></i>
+              <a href="https://nairobilug.github.io/pelican-alchemy/tag/rst.html">#rst</a>,               <a href="https://nairobilug.github.io/pelican-alchemy/tag/admonitions.html">#admonitions</a>,               <a href="https://nairobilug.github.io/pelican-alchemy/tag/markup.html">#markup</a>          </li>
+      </ul>
+    </header>
+    <div class="content">
+      <p>Discussion: <a class="reference external" href="https://github.com/nairobilug/pelican-alchemy/pull/88">https://github.com/nairobilug/pelican-alchemy/pull/88</a></p>
+<p>Spec: <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions">https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions</a></p>
+<div class="admonition danger">
+<p class="first admonition-title">!DANGER!</p>
+<p class="last">Beware killer rabbits!</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a note admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This is a important admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This is a warning admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">Attention!</p>
+<p class="last">This is a attention admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition caution">
+<p class="first admonition-title">Caution!</p>
+<p class="last">This is a caution admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">This is a error admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">This is a hint admonition.
+This is the second line of the first paragraph.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">This is a tip admonition.
+This is the second line of the first paragraph.</p>
+</div>
+
+    </div>
+  </article>
     </div>
   </div>
 

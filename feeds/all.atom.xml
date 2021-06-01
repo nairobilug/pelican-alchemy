@@ -135,7 +135,7 @@ static const string VOILA = "Voila";
 &lt;dd&gt;Second definition description&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;h1&gt;Tables&lt;/h1&gt;
-&lt;table class="table table-hover table-striped"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Head 1&lt;/th&gt;
@@ -213,4 +213,64 @@ static const string VOILA = "Voila";
 &lt;input id="text" placeholder="Text Input" type="text"/&gt;
 &lt;input type="submit" value="Submit"/&gt;
 &lt;/fieldset&gt;
-&lt;/form&gt;</content><category term="HTML5"></category><category term="html"></category><category term="sample"></category><category term="test"></category></entry></feed>
+&lt;/form&gt;</content><category term="HTML5"></category><category term="html"></category><category term="sample"></category><category term="test"></category></entry><entry><title>Testing RST admonitions</title><link href="https://nairobilug.github.io/pelican-alchemy/posts/testing-rst-admonitions.html" rel="alternate"></link><published>1999-01-01T00:00:00+03:00</published><updated>1999-01-01T00:00:00+03:00</updated><author><name>Vitaly Potyarkin</name></author><id>tag:nairobilug.github.io,1999-01-01:/pelican-alchemy/posts/testing-rst-admonitions.html</id><summary type="html">&lt;p&gt;Discussion: &lt;a class="reference external" href="https://github.com/nairobilug/pelican-alchemy/pull/88"&gt;https://github.com/nairobilug/pelican-alchemy/pull/88&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spec: &lt;a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions"&gt;https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions&lt;/a&gt;&lt;/p&gt;
+&lt;div class="admonition danger"&gt;
+&lt;p class="first admonition-title"&gt;!DANGER!&lt;/p&gt;
+&lt;p class="last"&gt;Beware killer rabbits!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is a note admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition important"&gt;
+&lt;p class="first admonition-title"&gt;Important&lt;/p&gt;
+&lt;p class="last"&gt;This is a important admonition.
+This is the second line of …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Discussion: &lt;a class="reference external" href="https://github.com/nairobilug/pelican-alchemy/pull/88"&gt;https://github.com/nairobilug/pelican-alchemy/pull/88&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spec: &lt;a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions"&gt;https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions&lt;/a&gt;&lt;/p&gt;
+&lt;div class="admonition danger"&gt;
+&lt;p class="first admonition-title"&gt;!DANGER!&lt;/p&gt;
+&lt;p class="last"&gt;Beware killer rabbits!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is a note admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition important"&gt;
+&lt;p class="first admonition-title"&gt;Important&lt;/p&gt;
+&lt;p class="last"&gt;This is a important admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p class="last"&gt;This is a warning admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition attention"&gt;
+&lt;p class="first admonition-title"&gt;Attention!&lt;/p&gt;
+&lt;p class="last"&gt;This is a attention admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition caution"&gt;
+&lt;p class="first admonition-title"&gt;Caution!&lt;/p&gt;
+&lt;p class="last"&gt;This is a caution admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition error"&gt;
+&lt;p class="first admonition-title"&gt;Error&lt;/p&gt;
+&lt;p class="last"&gt;This is a error admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition hint"&gt;
+&lt;p class="first admonition-title"&gt;Hint&lt;/p&gt;
+&lt;p class="last"&gt;This is a hint admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="first admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p class="last"&gt;This is a tip admonition.
+This is the second line of the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="rst"></category><category term="admonitions"></category><category term="markup"></category></entry></feed>
